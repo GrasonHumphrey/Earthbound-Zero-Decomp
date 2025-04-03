@@ -1,7 +1,7 @@
 # Earthbound-Zero-Decomp
 Ghidra decompilation of Earthbound Zero (Mother).  Made with Ghidra 11.3.
 
-Contains no Copyrighted material.
+Contains no Copyrighted material.  DO NOT push any copyrighted material (ROMs or non-clean .gzf's).
 
 ROM can be dumped from an Earthbound Zero cartridge, or may be be available on archival websites.
 
