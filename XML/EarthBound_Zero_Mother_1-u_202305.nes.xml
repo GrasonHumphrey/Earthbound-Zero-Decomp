@@ -322,7 +322,7 @@
 
 ]>
 <PROGRAM NAME="EarthBound_Zero_Mother_1-u_202305.nes" EXE_PATH="/C:/Users/ghumphrey/Documents/Projects/Ghidra Projects/ROMs/earth-bound-zero-mother-1-u_202305/EarthBound_Zero_Mother_1-u_202305.nes" EXE_FORMAT="NES ROM" IMAGE_BASE="0000">
-    <INFO_SOURCE USER="ghumphrey" TOOL="Ghidra 11.3" TIMESTAMP="Tue Apr 08 10:53:00 EDT 2025" />
+    <INFO_SOURCE USER="ghumphrey" TOOL="Ghidra 11.3" TIMESTAMP="Sun Apr 13 16:06:41 EDT 2025" />
     <PROCESSOR NAME="6502" LANGUAGE_PROVIDER="6502:LE:16:default:default" ENDIAN="little" />
     <DATATYPES>
         <STRUCTURE NAME="AllyData" NAMESPACE="/" SIZE="0x8">
@@ -485,7 +485,7 @@
                 <REGULAR_CMT>CHR ROM Offset low byte</REGULAR_CMT>
             </MEMBER>
             <MEMBER OFFSET="0x1" DATATYPE="byte" DATATYPE_NAMESPACE="/" NAME="OffsetHigh / Bank" SIZE="0x1">
-                <REGULAR_CMT>[0:1] CHR ROM Offset high byte.  [2:7] CHR ROM Bank = [2:7]+80</REGULAR_CMT>
+                <REGULAR_CMT>[0:1] CHR ROM Offset high byte.  [2:7] CHR ROM Bank = [2:7]+0x80</REGULAR_CMT>
             </MEMBER>
             <MEMBER OFFSET="0x2" DATATYPE="byte" DATATYPE_NAMESPACE="/" NAME="Unknown" SIZE="0x1">
                 <REGULAR_CMT>Currently unknown</REGULAR_CMT>
@@ -1010,18 +1010,23 @@
         <CODE_BLOCK START="PRG20::RAM:97a3" END="PRG20::RAM:99c1" />
         <CODE_BLOCK START="PRG20::RAM:9a4d" END="PRG20::RAM:9e62" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:a000" END="PRG23_MIRROR1::RAM:a739" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:a7da" END="PRG23_MIRROR1::RAM:a7ee" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:a740" END="PRG23_MIRROR1::RAM:a7ee" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:a801" END="PRG23_MIRROR1::RAM:a8e1" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:a8e7" END="PRG23_MIRROR1::RAM:ada6" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:adc1" END="PRG23_MIRROR1::RAM:adc3" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b1c5" END="PRG23_MIRROR1::RAM:b1de" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:afcd" END="PRG23_MIRROR1::RAM:afd2" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:afe1" END="PRG23_MIRROR1::RAM:afec" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b1c5" END="PRG23_MIRROR1::RAM:b201" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b3dd" END="PRG23_MIRROR1::RAM:b4e4" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b555" END="PRG23_MIRROR1::RAM:b5d2" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:b75a" END="PRG23_MIRROR1::RAM:b803" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b8d4" END="PRG23_MIRROR1::RAM:b8f1" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b862" END="PRG23_MIRROR1::RAM:ba06" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:bd5b" END="PRG23_MIRROR1::RAM:bd68" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bdeb" END="PRG23_MIRROR1::RAM:be3a" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bef2" END="PRG23_MIRROR1::RAM:beff" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bddd" END="PRG23_MIRROR1::RAM:be71" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bef2" END="PRG23_MIRROR1::RAM:bf14" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:bf2c" END="PRG23_MIRROR1::RAM:bf57" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bfaa" END="PRG23_MIRROR1::RAM:bfe1" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bf74" END="PRG23_MIRROR1::RAM:bf8b" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bfaa" END="PRG23_MIRROR1::RAM:bffd" />
         <CODE_BLOCK START="PRG26_MIRROR1::RAM:a000" END="PRG26_MIRROR1::RAM:a067" />
         <CODE_BLOCK START="PRG26_MIRROR1::RAM:a0b1" END="PRG26_MIRROR1::RAM:a0bc" />
         <CODE_BLOCK START="PRG28::RAM:8006" END="PRG28::RAM:8008" />
@@ -1098,8 +1103,14 @@
         <DEFINED_DATA ADDRESS="003f" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0040" DATATYPE="undefined2" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="0043" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="0045" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0047" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0048" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="0049" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="004a" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="004b" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="004c" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="004d" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="004e" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="004f" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0050" DATATYPE="undefined2" DATATYPE_NAMESPACE="/" SIZE="0x2" />
@@ -1112,12 +1123,15 @@
         <DEFINED_DATA ADDRESS="005a" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="005b" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="005c" DATATYPE="undefined2" DATATYPE_NAMESPACE="/" SIZE="0x2" />
-        <DEFINED_DATA ADDRESS="005e" DATATYPE="undefined2" DATATYPE_NAMESPACE="/" SIZE="0x2" />
-        <DEFINED_DATA ADDRESS="0060" DATATYPE="undefined2" DATATYPE_NAMESPACE="/" SIZE="0x2" />
-        <DEFINED_DATA ADDRESS="0062" DATATYPE="undefined2" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="005e" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="005f" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="0060" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="0061" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="0062" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="0063" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0064" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0065" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
-        <DEFINED_DATA ADDRESS="0066" DATATYPE="undefined2" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="0066" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0068" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0069" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="006a" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
@@ -3729,6 +3743,11 @@
         <DEFINED_DATA ADDRESS="PRG16::RAM:8863" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG16::RAM:8865" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG16::RAM:8867" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG16::RAM:9628" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG16::RAM:962a" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG16::RAM:962c" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG16::RAM:962e" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG16::RAM:9630" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG17::RAM:8000" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG17::RAM:8002" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG17::RAM:8004" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
@@ -3824,6 +3843,27 @@
         <DEFINED_DATA ADDRESS="PRG17::RAM:8921" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG17::RAM:8923" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG17::RAM:8925" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a7b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a7d" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a7f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a81" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a83" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a85" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a87" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a89" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a8b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a8d" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a8f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a91" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a93" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a95" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a97" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a99" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a9b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a9d" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8a9f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8aa1" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:8aa3" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG17::RAM:8fd5" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG17::RAM:8fd7" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG17::RAM:8fd9" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
@@ -3856,6 +3896,57 @@
         <DEFINED_DATA ADDRESS="PRG17::RAM:900f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG17::RAM:9011" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG17::RAM:9013" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:9385" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:9387" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:9389" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:938b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:938d" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:938f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:9391" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:9393" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:9395" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG17::RAM:9397" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8000" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8002" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8004" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8006" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8008" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:800a" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:800c" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:800e" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8010" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8012" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8014" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8016" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8018" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:801a" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:801c" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:801e" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8020" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8022" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8024" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8026" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8028" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:802a" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:802c" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:802e" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8030" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8032" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8034" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8036" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8038" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:803a" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:803c" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:803e" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8040" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8042" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8044" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8046" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8048" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:804a" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:804c" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:804e" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG18::RAM:8050" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG19::RAM:9aca" DATATYPE="byte[27]" DATATYPE_NAMESPACE="/" SIZE="0x1b" />
         <DEFINED_DATA ADDRESS="PRG19_MIRROR1::RAM:ab69" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG19_MIRROR1::RAM:ab6b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
@@ -7231,6 +7322,8 @@
         <EQUATE_GROUP />
     </EQUATES>
     <COMMENTS>
+        <COMMENT ADDRESS="0032" TYPE="pre">Pointer to object currently being interacted with
+to object pointer table in PRG16, 17, or 18</COMMENT>
         <COMMENT ADDRESS="0048" TYPE="pre">What creature group Ninten is fighting:
 00: Not in combat
 Offset from start of Enemy Groups</COMMENT>
@@ -7480,6 +7573,7 @@ PRG24-&gt;(3A5 x 3 + 8000)
 PRG24-&gt;(AEF + 8000)
 PRG24-&gt;8AEF</COMMENT>
         <COMMENT ADDRESS="PRG17::RAM:8000" TYPE="plate">Object pointer table 2</COMMENT>
+        <COMMENT ADDRESS="PRG18::RAM:8000" TYPE="plate">Object pointer table 3?</COMMENT>
         <COMMENT ADDRESS="PRG19_MIRROR1::RAM:a197" TYPE="pre">Returned value in 0082 determines what address
 will be returned to.
 Talk: X=0, A1E9
@@ -7656,20 +7750,29 @@ TODO: Figure out why</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a93f" TYPE="pre">Loads the menu item number selected into A
 Items numbered 0-7, L-&gt;R then Top-&gt;Bot</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a942" TYPE="pre">B pressed, load 8 into A</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a962" TYPE="pre">Loops until target selected
+Sets carry if B pressed
+Otherwise sets some data in 0053, 0054, and 061c</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a979" TYPE="pre">This loops until target is selected
 or B pressed</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a97c" TYPE="pre">Branch if B pressed</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a97e" TYPE="pre">Otherwise load target index to X</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a980" TYPE="pre">0591 holds the enemies being fought</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a986" TYPE="pre">0053, 0054, and 061c hold some enemy data,
+but not sure what</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a991" TYPE="plate">Loops until target selected or B pressed
+Returns the index of selected target into A
+Sets carry if B pressed</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a9a1" TYPE="pre">Loops until target is selected or B pressed</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a9ad" TYPE="pre">Target selected, load the target index into A</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a9b1" TYPE="pre">B pressed</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ac23" TYPE="plate">Returns either:
 0 (attack)
 2 (goods, presumably with a heal item selected)</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ac3d" TYPE="pre">Enemy damage dealt calculation</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b9a5" TYPE="pre">Ally damage taken calculation</COMMENT>
         <COMMENT ADDRESS="PRG24::RAM:8000" TYPE="end-of-line">CHR ROM Offset low byte</COMMENT>
-        <COMMENT ADDRESS="PRG24::RAM:8000" TYPE="plate">Text pointer table (there are probably more)
-
-CHR ROM offset high byte (from 0) = ptr2[0:1]
-CHR ROM offset low byte = ptr1
-
-CHR ROM bank:
-CHR ROM bank = (ptr2[2:7] + 80)</COMMENT>
+        <COMMENT ADDRESS="PRG24::RAM:8000" TYPE="plate">Text pointer table</COMMENT>
         <COMMENT ADDRESS="PRG25::RAM:9b03" TYPE="plate">Naming screen text</COMMENT>
         <COMMENT ADDRESS="PRG25::RAM:9cd0" TYPE="plate">Intro text</COMMENT>
         <COMMENT ADDRESS="PRG26_MIRROR1::RAM:a046" TYPE="pre">This branch leads to kill statement, must never be taken</COMMENT>
@@ -7735,16 +7838,16 @@ Happens every time on overworld standing still</COMMENT>
     </COMMENTS>
     <PROPERTIES>
         <PROPERTY NAME="Program Information.Analysis Times.Times" TYPE="custom" VALUE="&amp;lt;SAVE_STATE&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Basic Constant Reference Analyzer&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;701&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Basic Constant Reference Analyzer&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;802&amp;quot; /&amp;gt;
     &amp;lt;STATE NAME=&amp;quot;CUSTOM_OPTION_CLASS&amp;quot; TYPE=&amp;quot;string&amp;quot; VALUE=&amp;quot;ghidra.app.plugin.core.analysis.StoredAnalyzerTimes&amp;quot; /&amp;gt;
     &amp;lt;STATE NAME=&amp;quot;Call Convention ID&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;11&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Call-Fixup Installer&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;25&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Create Function&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;190&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Decompiler Switch Analysis&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;1442&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Non-Returning Functions - Discovered&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;87&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Shared Return Calls&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;113&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Stack&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;352&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Subroutine References&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;41&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Call-Fixup Installer&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;28&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Create Function&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;220&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Decompiler Switch Analysis&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;1444&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Non-Returning Functions - Discovered&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;94&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Shared Return Calls&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;125&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Stack&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;401&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Subroutine References&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;50&amp;quot; /&amp;gt;
 &amp;lt;/SAVE_STATE&amp;gt;" />
         <PROPERTY NAME="Program Information.Analyzed" TYPE="bool" VALUE="y" />
         <PROPERTY NAME="Program Information.Created With Ghidra Version" TYPE="string" VALUE="11.3" />
@@ -10034,8 +10137,11 @@ Happens every time on overworld standing still</COMMENT>
         <SYMBOL ADDRESS="0030" NAME="ObjectInfoPtr" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0032" NAME="ObjectPtr" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0048" NAME="PlayerCombatState" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="0054" NAME="CurrentAlly" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0056" NAME="Name_Entry_Length" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="005c" NAME="SpriteDataLoc" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="0060" NAME="Combat_DamageTakenLower" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="0061" NAME="Combat_DamageTakenUpper" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0065" NAME="Held_Input_Delay" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0073" NAME="DisplayText_Addr_Lower" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0074" NAME="DisplayText_Addr_Upper" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
@@ -10059,6 +10165,10 @@ Happens every time on overworld standing still</COMMENT>
         <SYMBOL ADDRESS="0403" NAME="UNK_Timing_Counter_Low" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0404" NAME="UNK_Timing_0404" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0405" NAME="UNK_Timing_0405" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="0603" NAME="AllyHealthLower" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="0604" NAME="AllyHealthUpper" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="0605" NAME="AllyPPLower" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="0606" NAME="AllyPPUpper" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="2000" NAME="PPUCTRL" NAMESPACE="" TYPE="global" SOURCE_TYPE="IMPORTED" PRIMARY="y" />
         <SYMBOL ADDRESS="2001" NAME="PPUMASK" NAMESPACE="" TYPE="global" SOURCE_TYPE="IMPORTED" PRIMARY="y" />
         <SYMBOL ADDRESS="2002" NAME="PPUSTATUS" NAMESPACE="" TYPE="global" SOURCE_TYPE="IMPORTED" PRIMARY="y" />
@@ -12066,17 +12176,48 @@ Happens every time on overworld standing still</COMMENT>
         <SYMBOL ADDRESS="CHR205::RAM:012e" NAME="STR_&lt;LINE&gt;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="CHR205::RAM:0130" NAME="STR_.&lt;LINE&gt;&lt;WAIT&gt;&lt;WAIT_THEN_OVERWRITE&gt;?in&lt;SKIP1&gt;_learned&lt;LINE&gt;a_new_PSI-Power&lt;LINE&gt;through_battle!&lt;LINE&gt;&lt;WAIT&gt;&lt;WAIT_THEN_OVERWRITE&gt;Picked_up_??m!&lt;LINE&gt;&lt;WAIT&gt;&lt;WAIT_THEN_OVERWRITE&gt;(??g_hears_the&lt;LINE&gt;voice_of_Queen_Mary)&lt;LINE&gt;&lt;WAIT&gt;Giegue_cannot_be&lt;LINE&gt;defeated_with&lt;LINE&gt;force...&lt;LINE&gt;&lt;WAIT&gt;You_cannot_defeat&lt;LINE&gt;Giegue_with_a&lt;LINE&gt;weapon_of_any_kind.&lt;LINE&gt;&lt;WAIT&gt;You_must_SING_my&lt;LINE&gt;lullaby,_with_all&lt;LINE&gt;your_feelings...&lt;LINE&gt;&lt;WAIT&gt;SING_my_lullaby&lt;LINE&gt;with_all_your&lt;LINE&gt;heart.&lt;LINE&gt;&lt;WAIT&gt;&lt;WAIT_THEN_OVERWRITE&gt;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="CHR205::RAM:0253" NAME="STR_&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;&#x25BA;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG16::RAM:8034" NAME="ObjPtrTable_Bank1_1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG16::RAM:8038" NAME="ObjPtrTable_Bank1_2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG16::RAM:80a0" NAME="Obj_NintenDog" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG16::RAM:827c" NAME="Obj_NintenHouseSign" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG16::RAM:85a1" NAME="Obj_Podunk_Person_1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG16::RAM:85cd" NAME="Obj_Podunk_Sign_CityHall" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:8034" NAME="ObjPtrTable_Bank1_1_8304" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:8038" NAME="ObjPtrTable_Bank1_2_8038" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:80a0" NAME="Obj_Home_NPC_Dog" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:80d0" NAME="Obj_PodunkN_NPC_PippisMom" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:827c" NAME="Obj_Home_Sign_NintensHouse" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:847f" NAME="Obj_PodunkN_NPC_BlondeBlueShirt" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:84bc" NAME="Obj_PodunkN_NPC_BlueMustache" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:84cf" NAME="Obj_PodunkS_NPC_RedDress" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:84f0" NAME="Obj_PodunkS_NPC_BlondeBlackShirt" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:84fc" NAME="Obj_PudunkS_NPC_FatLady" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:8508" NAME="Obj_PodunkS_NPC_BlueMustache" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:8520" NAME="Obj_PodunkN_NPC_PurpleWoman" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:8533" NAME="Obj_PodunkN_NPC_FatLady" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:8546" NAME="Obj_PodunkS_NPC_CoolDude" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:8559" NAME="Obj_PodunkS_NPC_PurpleLady" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:8565" NAME="Obj_PodunkS_NPC_OldLady" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:8595" NAME="Obj_PodunkN_NPC_CoolDude" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:85a1" NAME="Obj_PodunkS_NPC_BlondeBlueShirt" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:85ad" NAME="Obj_PodunkS_NPC_ScuzzyKid" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:85cd" NAME="Obj_PodunkS_Sign_CityHall" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG16::RAM:85d9" NAME="Obj_Podunk_Sign_North" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG16::RAM:9668" NAME="Obj_Podunk_Sign_Zoo" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:82cc" NAME="Obj_Home_NPC_Mom" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:8325" NAME="Obj_Home_NPC_Minnie" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:838a" NAME="Obj_Home_NPC_Mimmie" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:83b8" NAME="Obj_Home_Phone" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG17::RAM:88fb" NAME="ObjPtrTable_Bank2_6" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG17::RAM:8989" NAME="Obj_Podunk_Food_Shop" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:8989" NAME="Obj_PodunkBurger_NPC_Shop" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:89f6" NAME="Obj_PodunkBurger_NPC_PurpleGirl" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:8a0e" NAME="Obj_PodunkDeptStore_NPC_ShopLvl2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:8d09" NAME="Obj_PodunkDeptStore_Phone" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG17::RAM:8fd5" NAME="ObjPtrTable_Bank2_9" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:90c6" NAME="Obj_PodunkDeptStore_ATM" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG17::RAM:90da" NAME="Obj_Podunk_DeptStore_Lvl1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:90f0" NAME="Obj_PodunkDeptStore_NPC_ShopLvl1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:9130" NAME="Obj_PodunkDeptStore_NPC_ShopLvl3" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:9177" NAME="Obj_PodunkDeptStore_NPC_ShopLvl4" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:91be" NAME="Obj_PodunkDeptStore_NPC_PetStoreMan" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:9219" NAME="Obj_PodunkDeptStore_NPC_BlackDressWoman" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:93da" NAME="Obj_PodunkCityHall_NPC_Receptionist" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:93ed" NAME="Obj_PodunkCityHall_NPC_Mayor" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG17::RAM:9474" NAME="Obj_PodunkCityHall_NPC_Abbott" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG19::RAM:9aca" NAME="STR_Back&lt;LINE&gt;OPQRSTU_VWXYZ.&apos;_*End_" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:a005" NAME="MenuAction_State" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:a178" NAME="Mainloop_Menu_Opened" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
@@ -13542,6 +13683,22 @@ person/selection is being talked to.</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:a723" END="PRG23_MIRROR1::RAM:a739" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:a74a" NAME="FUN_PRG23_MIRROR1__a74a" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:a74a" END="PRG23_MIRROR1::RAM:a7a2" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:a7a3" NAME="FUN_PRG23_MIRROR1__a7a3" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:a7a3" END="PRG23_MIRROR1::RAM:a7aa" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:a7ab" NAME="FUN_PRG23_MIRROR1__a7ab" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:a7ab" END="PRG23_MIRROR1::RAM:a7bd" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:a7be" NAME="FUN_PRG23_MIRROR1__a7be" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:a7be" END="PRG23_MIRROR1::RAM:a7d9" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:a7da" NAME="Combat_Loop_WaitForAction_3" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:a7da" END="PRG23_MIRROR1::RAM:a7ee" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
@@ -13599,6 +13756,9 @@ TODO: Figure out why</REGULAR_CMT>
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:a991" NAME="Combat_Fight_SelectTarget_2" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:a991" END="PRG23_MIRROR1::RAM:a9b2" />
+            <REGULAR_CMT>Loops until target selected or B pressed
+Returns the index of selected target into A
+Sets carry if B pressed</REGULAR_CMT>
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:a9b3" NAME="FUN_PRG23_MIRROR1__a9b3" LIBRARY_FUNCTION="n">
@@ -13665,8 +13825,19 @@ TODO: Figure out why</REGULAR_CMT>
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:acd6" NAME="FUN_PRG23_MIRROR1__acd6" LIBRARY_FUNCTION="n">
-            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:acd6" END="PRG23_MIRROR1::RAM:ada6" />
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:acd6" END="PRG23_MIRROR1::RAM:ad7a" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:ad7b" NAME="FUN_PRG23_MIRROR1__ad7b" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:ad7b" END="PRG23_MIRROR1::RAM:ada6" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:adc1" NAME="thunk_FUN_PRG23_MIRROR1__a3f8" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:adc1" END="PRG23_MIRROR1::RAM:adc3" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:afe1" NAME="FUN_PRG23_MIRROR1__afe1" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:afe1" END="PRG23_MIRROR1::RAM:afec" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b1c5" NAME="FUN_PRG23_MIRROR1__b1c5" LIBRARY_FUNCTION="n">
@@ -13677,6 +13848,38 @@ TODO: Figure out why</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b1d1" END="PRG23_MIRROR1::RAM:b1de" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b1e0" NAME="FUN_PRG23_MIRROR1__b1e0" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b1e0" END="PRG23_MIRROR1::RAM:b201" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b3dd" NAME="FUN_PRG23_MIRROR1__b3dd" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b3dd" END="PRG23_MIRROR1::RAM:b42c" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b42d" NAME="FUN_PRG23_MIRROR1__b42d" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b42d" END="PRG23_MIRROR1::RAM:b495" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b496" NAME="FUN_PRG23_MIRROR1__b496" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b496" END="PRG23_MIRROR1::RAM:b4c9" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b4ca" NAME="FUN_PRG23_MIRROR1__b4ca" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b4ca" END="PRG23_MIRROR1::RAM:b4e4" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b555" NAME="FUN_PRG23_MIRROR1__b555" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b555" END="PRG23_MIRROR1::RAM:b588" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b589" NAME="FUN_PRG23_MIRROR1__b589" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b589" END="PRG23_MIRROR1::RAM:b5bb" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b5bc" NAME="FUN_PRG23_MIRROR1__b5bc" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b5bc" END="PRG23_MIRROR1::RAM:b5d2" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b75a" NAME="FUN_PRG23_MIRROR1__b75a" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b75a" END="PRG23_MIRROR1::RAM:b803" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
@@ -13685,20 +13888,44 @@ TODO: Figure out why</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b8d4" END="PRG23_MIRROR1::RAM:b8f1" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b915" NAME="FUN_PRG23_MIRROR1__b915" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b915" END="PRG23_MIRROR1::RAM:ba06" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bd5b" NAME="FUN_PRG23_MIRROR1__bd5b" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bd5b" END="PRG23_MIRROR1::RAM:bd68" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bddd" NAME="FUN_PRG23_MIRROR1__bddd" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bddd" END="PRG23_MIRROR1::RAM:bde7" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bde8" NAME="FUN_PRG23_MIRROR1__bde8" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bde8" END="PRG23_MIRROR1::RAM:bdea" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bdeb" NAME="FUN_PRG23_MIRROR1__bdeb" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bdeb" END="PRG23_MIRROR1::RAM:be3a" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:be3b" NAME="FUN_PRG23_MIRROR1__be3b" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:be3b" END="PRG23_MIRROR1::RAM:be71" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bef2" NAME="FUN_PRG23_MIRROR1__bef2" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bef2" END="PRG23_MIRROR1::RAM:beff" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bf00" NAME="FUN_PRG23_MIRROR1__bf00" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bf00" END="PRG23_MIRROR1::RAM:bf14" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bf2c" NAME="FUN_PRG23_MIRROR1__bf2c" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bf2c" END="PRG23_MIRROR1::RAM:bf57" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bf74" NAME="FUN_PRG23_MIRROR1__bf74" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bf74" END="PRG23_MIRROR1::RAM:bf8b" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bfaa" NAME="FUN_PRG23_MIRROR1__bfaa" LIBRARY_FUNCTION="n">
@@ -13707,6 +13934,14 @@ TODO: Figure out why</REGULAR_CMT>
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bfd8" NAME="FUN_PRG23_MIRROR1__bfd8" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bfd8" END="PRG23_MIRROR1::RAM:bfe1" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bfe2" NAME="FUN_PRG23_MIRROR1__bfe2" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bfe2" END="PRG23_MIRROR1::RAM:bfee" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bfef" NAME="FUN_PRG23_MIRROR1__bfef" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bfef" END="PRG23_MIRROR1::RAM:bffd" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG26_MIRROR1::RAM:a000" NAME="FUN_PRG26_MIRROR1__a000" LIBRARY_FUNCTION="n">
