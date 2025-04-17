@@ -7,7 +7,7 @@ ROM can be dumped from an Earthbound Zero cartridge, or may be be available on a
 
 File name: EarthBound_Zero_Mother_1-u_202305.nes
 
-SHA-256 Checksum: 876FB3C22AD17176D1485427AE9762A6C5DFECD5EEBE428B93E22514869C48C0
+ROM SHA-256 Checksum: 876FB3C22AD17176D1485427AE9762A6C5DFECD5EEBE428B93E22514869C48C0
 
 ## Instructions
 ### Import
@@ -28,3 +28,5 @@ SHA-256 Checksum: 876FB3C22AD17176D1485427AE9762A6C5DFECD5EEBE428B93E22514869C48
 Plugin used to decode/label strings: <a href="https://github.com/GrasonHumphrey/GhidraTextDecode">GhidraTextDecode</a>.
 
 Original .nes file loaded with <a href="https://github.com/kylewlacy/GhidraNes/tree/main">GhidraNES</a>.
+
+Documentation can be found on the <a href="https://datacrystal.tcrf.net/wiki/EarthBound_Beginnings">Earthbound Beginnings Datacrystal Wiki</a>.
