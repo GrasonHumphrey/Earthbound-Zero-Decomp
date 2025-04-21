@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8"/>
 <title>EarthBound Beginnings/Item data - Data Crystal</title>
-<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"8cdf4c5cfbfde16cd249bc76","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"EarthBound_Beginnings/Item_data","wgTitle":"EarthBound Beginnings/Item data","wgCurRevisionId":64738,"wgRevisionId":64738,"wgArticleId":2613,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Subpages"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"EarthBound_Beginnings/Item_data","wgRelevantArticleId":2613,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],
 "simpleBatchUploadMaxFilesPerBatch":{"*":1000},"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.vector.styles.legacy":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
 <link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=skins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
@@ -84,7 +83,7 @@
 <li class="toclevel-2 tocsection-3"><a href="#Teleport_locations"><span class="tocnumber">1.2</span> <span class="toctext">Teleport locations</span></a></li>
 <li class="toclevel-2 tocsection-4"><a href="#Train_destinations"><span class="tocnumber">1.3</span> <span class="toctext">Train destinations</span></a></li>
 <li class="toclevel-2 tocsection-5"><a href="#Character_levelup_table"><span class="tocnumber">1.4</span> <span class="toctext">Character levelup table</span></a></li>
-<li class="toclevel-2 tocsection-6"><a href="#PSI"><span class="tocnumber">1.5</span> <span class="toctext">PSI</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Known_overworld_action_IDs"><span class="tocnumber">1.5</span> <span class="toctext">Known overworld action IDs</span></a></li>
 </ul>
 </li>
 </ul>
@@ -120,22 +119,59 @@
 <ul><li>Byte 0: Experience requirement constant</li>
 <li>Bytes 1-2: Unknown</li>
 <li>Bytes 3-7: Stat growth rates</li></ul>
-<h2><span class="mw-headline" id="PSI">PSI</span></h2>
-<ul><li>Bytes 0-1: Pointer to name</li>
-<li>Byte 2: Level for Ninten to learn</li>
-<li>Byte 3: Level for Ana to learn</li>
-<li>Byte 4: Action (non-battle)</li>
-<li>Byte 5: Action (battle)</li>
-<li>Byte 6: Unused</li>
-<li>Byte 7: PP required</li></ul>
+<h2><span class="mw-headline" id="Known_overworld_action_IDs">Known overworld action IDs</span></h2>
+<p>Unlike the battle actions, the overworld actions' using text is separate from the effect.  That means the Overworld action ID only changes the effect of the item!
+</p>
+<ul><li>01 - Interact (using item)</li>
+<li>02 - Equip Item</li></ul>
+<ul><li>03 - <b>Unknown</b></li>
+<li>04 - <b>Unknown</b></li>
+<li>05 - Use Bread</li>
+<li>06 - Use Berry Tofu? (possibly, includes code for Eating it)</li>
+<li>07 - Use Phone Card?</li>
+<li>08 - Repel Ring</li>
+<li>09 - Debug (the item)</li>
+<li>0A - Juice</li>
+<li>0B - Fries</li>
+<li>0C - Magic Herb</li>
+<li>0D - Hamburger</li>
+<li>0E - Sports Drink</li>
+<li>0F - Medicine</li>
+<li>10 - Big Bag</li>
+<li>11 - Antidote</li>
+<li>12 - Mouthwash</li>
+<li>13 - PSI Stone</li>
+<li>14 - Magic Ribbon</li>
+<li>15 - Magic Candy</li>
+<li>16 - Speed Capsule</li>
+<li>17 - Wisdom Capsule</li>
+<li>18 - Strength Capsule</li>
+<li>19 - Force Capsule</li>
+<li>1A - Fight Capsule</li>
+<li>1B - GGF's Diary Text</li></ul>
+<ul><li>1C - Nothing happened</li>
+<li>1D - Nothing happened</li></ul>
+<ul><li>1E - Onyx Hook</li>
+<li>1F - Crumbs</li>
+<li>20 - Final Weapon Text</li>
+<li>21 - Ruler Text</li>
+<li>22 - Map</li>
+<li>23 - Ocarina</li>
+<li>24 - <b>Unknown</b> (Time Machine?)</li></ul>
+<ul><li>25 - Telepathy</li>
+<li>26 - Teleport</li>
+<li>27 - Lifeup a</li>
+<li>28 - Lifeup ß</li>
+<li>29 - Lifeup ?</li>
+<li>2A - Healing ?</li>
+<li>2B - No targeting; Tried PSI! Nothing happened. (Possibly some group Healing?)</li>
+<li>2C - Healing a</li>
+<li>2D - Super Healing</li></ul>
 <!-- 
 NewPP limit report
-Cached time: 20250418121151
 Cache expiry: 86400
 Reduced expiry: false
 Complications: [show-toc]
-CPU time usage: 0.013 seconds
-Real time usage: 0.045 seconds
 Preprocessor visited node count: 79/1000000
 Post-expand include size: 1425/2097152 bytes
 Template argument size: 93/2097152 bytes
@@ -145,17 +181,11 @@ Unstrip recursion depth: 0/20
 Unstrip post-expand size: 0/5000000 bytes
 -->
 <!--
-Transclusion expansion time report (%,ms,calls,template)
-100.00%   22.859      1 -total
- 73.06%   16.701      1 Template:Subpage
- 26.62%    6.085      1 Template:Infobox_table
- 20.35%    4.652      1 Template:TalkIndicator
 -->
 
-<!-- Saved in parser cache with key datacrystal-wiki_:pcache:idhash:2613-0!canonical and timestamp 20250418121151 and revision id 64738.
  -->
 </div>
-<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://datacrystal.tcrf.net/w/index.php?title=EarthBound_Beginnings/Item_data&amp;oldid=64738">https://datacrystal.tcrf.net/w/index.php?title=EarthBound_Beginnings/Item_data&amp;oldid=64738</a>"</div></div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://datacrystal.tcrf.net/w/index.php?title=EarthBound_Beginnings/Item_data&amp;oldid=65685">https://datacrystal.tcrf.net/w/index.php?title=EarthBound_Beginnings/Item_data&amp;oldid=65685</a>"</div></div>
 		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Subpages" title="Category:Subpages">Subpages</a></li></ul></div></div>
 	</div>
 </div>
@@ -361,7 +391,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	</h3>
 	<div class="vector-menu-content">
 		
-		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/EarthBound_Beginnings/Item_data" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/EarthBound_Beginnings/Item_data" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=EarthBound_Beginnings/Item_data&amp;oldid=64738" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=EarthBound_Beginnings/Item_data&amp;action=info" title="More information about this page"><span>Page information</span></a></li></ul>
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/EarthBound_Beginnings/Item_data" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/EarthBound_Beginnings/Item_data" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=EarthBound_Beginnings/Item_data&amp;oldid=65685" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=EarthBound_Beginnings/Item_data&amp;action=info" title="More information about this page"><span>Page information</span></a></li></ul>
 		
 	</div>
 </nav>
@@ -373,7 +403,7 @@ Transclusion expansion time report (%,ms,calls,template)
 
 <footer id="footer" class="mw-footer" role="contentinfo" >
 	<ul id="footer-info">
-	<li id="footer-info-lastmod"> This page was last edited on 17 November 2024, at 12:04.</li>
+	<li id="footer-info-lastmod"> This page was last edited on 18 April 2025, at 20:07.</li>
 	<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
 </ul>
 
@@ -390,6 +420,5 @@ Transclusion expansion time report (%,ms,calls,template)
 
 </footer>
 
-<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.013","walltime":"0.045","ppvisitednodes":{"value":79,"limit":1000000},"postexpandincludesize":{"value":1425,"limit":2097152},"templateargumentsize":{"value":93,"limit":2097152},"expansiondepth":{"value":7,"limit":100},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%   22.859      1 -total"," 73.06%   16.701      1 Template:Subpage"," 26.62%    6.085      1 Template:Infobox_table"," 20.35%    4.652      1 Template:TalkIndicator"]},"cachereport":{"timestamp":"20250418121151","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":109});});</script>
 </body>
 </html>
