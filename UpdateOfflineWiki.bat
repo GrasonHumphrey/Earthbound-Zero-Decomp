@@ -23,3 +23,13 @@ powershell.exe -executionpolicy --command "(Invoke-WebRequest -URI https://datac
 powershell.exe -executionpolicy --command "(Invoke-WebRequest -URI https://datacrystal.tcrf.net/wiki/EarthBound_Beginnings/Battle_Engine).Content | Set-Content -Path .\Wiki\Battle_Engine.html"
 powershell.exe -executionpolicy --command "(Invoke-WebRequest -URI https://datacrystal.tcrf.net/wiki/EarthBound_Beginnings/Anti-Piracy).Content | Set-Content -Path .\Wiki\Anti-Piracy.html"
 powershell.exe -executionpolicy --command "(Invoke-WebRequest -URI https://datacrystal.tcrf.net/wiki/EarthBound_Beginnings/Music_table).Content | Set-Content -Path .\Wiki\Music_table.html"
+
+set "tempfile=%cd%\Wiki\tempfile.html"
+
+for /r %%i in (Wiki\*) do (
+
+type %%i | findstr /V /C:"CPU time usage" | findstr /V /C:"Real time usage" | findstr /V /C:"Cached time" | findstr /V /C:"wgBreakFrames" | findstr /V /C:"parser cache" | findstr /V /C:"wgPageParseReport"  > %tempfile%
+type %tempfile% | findstr /V /C:"Transclusion" | findstr /V /C:"1 -total" | findstr /V /C:"Template:Subpage" | findstr /V /C:"Template:Infobox_table" | findstr /V /C:"Template:TalkIndicator" > %tempfile%
+move /y "%tempfile%" "%%i" > nul
+
+)
