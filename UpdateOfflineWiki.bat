@@ -29,7 +29,8 @@ set "tempfile=%cd%\Wiki\tempfile.html"
 for /r %%i in (Wiki\*) do (
 
 type %%i | findstr /V /C:"CPU time usage" | findstr /V /C:"Real time usage" | findstr /V /C:"Cached time" | findstr /V /C:"wgBreakFrames" | findstr /V /C:"parser cache" | findstr /V /C:"wgPageParseReport"  > %tempfile%
-type %tempfile% | findstr /V /C:"Transclusion" | findstr /V /C:"1 -total" | findstr /V /C:"Template:Subpage" | findstr /V /C:"Template:Infobox_table" | findstr /V /C:"Template:TalkIndicator" > %tempfile%
+type %tempfile% | findstr /V /C:"Transclusion" | findstr /V /C:"1 -total" | findstr /V /C:"Template:Subpage" | findstr /V /C:"Template:Infobox_table" | findstr /V /C:"Template:TalkIndicator" | findstr /V /C:"printfooter" | findstr /V /C:"vector-menu-content-list" | findstr /V /C:"footer-info-lastmod" | findstr /V /C:"Preprocessor visited node" | findstr /V /C:" Template:" > %tempfile%
+
 move /y "%tempfile%" "%%i" > nul
 
 )
