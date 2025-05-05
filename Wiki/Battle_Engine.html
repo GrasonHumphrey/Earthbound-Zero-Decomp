@@ -50,11 +50,12 @@
 <li class="toclevel-2 tocsection-7"><a href="#Healing"><span class="tocnumber">2.2</span> <span class="toctext">Healing</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-8"><a href="#Run_away"><span class="tocnumber">3</span> <span class="toctext">Run away</span></a></li>
-<li class="toclevel-1 tocsection-9"><a href="#Combat_data"><span class="tocnumber">4</span> <span class="toctext">Combat data</span></a>
+<li class="toclevel-1 tocsection-8"><a href="#Turn_order"><span class="tocnumber">3</span> <span class="toctext">Turn order</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Run_away"><span class="tocnumber">4</span> <span class="toctext">Run away</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Combat_data"><span class="tocnumber">5</span> <span class="toctext">Combat data</span></a>
 <ul>
-<li class="toclevel-2 tocsection-10"><a href="#Allies"><span class="tocnumber">4.1</span> <span class="toctext">Allies</span></a></li>
-<li class="toclevel-2 tocsection-11"><a href="#Enemies"><span class="tocnumber">4.2</span> <span class="toctext">Enemies</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Allies"><span class="tocnumber">5.1</span> <span class="toctext">Allies</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Enemies"><span class="tocnumber">5.2</span> <span class="toctext">Enemies</span></a></li>
 </ul>
 </li>
 </ul>
@@ -151,6 +152,11 @@ This means that any attack can hit for 76% to 124% of its base damage.
 <h3><span class="mw-headline" id="Healing">Healing</span></h3>
 <p>Healing PSI moves heal for the same amount of damage they would do as calculated by the Fight damage calculation, using base damage/healing given by <a href="/wiki/EarthBound_Beginnings/PSI_data#PSI_properties" title="EarthBound Beginnings/PSI data">PSI properties</a>.
 </p>
+<h2><span class="mw-headline" id="Turn_order">Turn order</span></h2>
+<p>Every turn, everyone in combat is assigned a "final speed" value, calculated as follows. The same RandMult table from the <a href="/wiki/EarthBound_Beginnings/Battle_Engine#Fight" title="EarthBound Beginnings/Battle Engine">Fight</a> section is used.
+</p><p>FinalSpeed = BaseSpeed * (1 ± 0.1 * RandMult)
+</p><p>Everyone in combat then acts in order of their calculated FinalSpeed, highest to lowest.
+</p>
 <h2><span class="mw-headline" id="Run_away">Run away</span></h2>
 <p>Every non-fainted ally has a 50% chance of successfully running away, and if any one ally escapes the entire party will escape.  So, the chance of successfully running away is:
 </p><p>1 - 0.5<sup>Number of non-fainted allies</sup>
@@ -183,7 +189,9 @@ This means that any attack can hit for 76% to 124% of its base damage.
 <li>18-19: Pointer to name</li>
 <li>1A-1F: Mostly unknown</li>
 <li>1E:
-<ul><li>Bit 7: Blinded</li></ul></li></ul>
+<ul><li>Bit 1: Having asthma attack</li>
+<li>Bit 5: Roped</li>
+<li>Bit 7: Blinded</li></ul></li></ul>
 <h3><span class="mw-headline" id="Enemies">Enemies</span></h3>
 <p>Stored at RAM 0x0680-0x06FF
 </p>
@@ -207,12 +215,14 @@ This means that any attack can hit for 76% to 124% of its base damage.
 <li>0D: Wisdom</li>
 <li>0E: Strength</li>
 <li>0F: Force</li>
-<li>10-17: Attacks</li>
+<li>10-17: <a href="/wiki/EarthBound_Beginnings/Battle_actions#Known_IDs" title="EarthBound Beginnings/Battle actions">Attacks</a></li>
 <li>18-19: Pointer to <a href="/wiki/EarthBound_Beginnings/Enemy_data" title="EarthBound Beginnings/Enemy data">enemy data</a></li>
 <li>1A-1B: Experience</li>
 <li>1C-1D: Money</li>
 <li>1E:
-<ul><li>Bit 7: Blinded</li></ul></li>
+<ul><li>Bit 1: Having asthma attack</li>
+<li>Bit 5: Roped</li>
+<li>Bit 7: Blinded</li></ul></li>
 <li>1F: Graphic tileset</li></ul>
 <!-- 
 NewPP limit report
