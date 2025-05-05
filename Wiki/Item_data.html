@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8"/>
 <title>EarthBound Beginnings/Item data - Data Crystal</title>
-"simpleBatchUploadMaxFilesPerBatch":{"*":1000},"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.vector.styles.legacy":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
+"simpleBatchUploadMaxFilesPerBatch":{"*":1000},"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.vector.styles.legacy":"ready","jquery.tablesorter.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","jquery.tablesorter","mediawiki.toc","skins.vector.legacy.js"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=skins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=jquery.tablesorter.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
 <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
 <meta name="ResourceLoaderDynamicStyles" content=""/>
 <link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
@@ -83,17 +83,21 @@
 <li class="toclevel-2 tocsection-3"><a href="#Teleport_locations"><span class="tocnumber">1.2</span> <span class="toctext">Teleport locations</span></a></li>
 <li class="toclevel-2 tocsection-4"><a href="#Train_destinations"><span class="tocnumber">1.3</span> <span class="toctext">Train destinations</span></a></li>
 <li class="toclevel-2 tocsection-5"><a href="#Character_levelup_table"><span class="tocnumber">1.4</span> <span class="toctext">Character levelup table</span></a></li>
-<li class="toclevel-2 tocsection-6"><a href="#Known_overworld_action_IDs"><span class="tocnumber">1.5</span> <span class="toctext">Known overworld action IDs</span></a></li>
 </ul>
 </li>
+<li class="toclevel-1 tocsection-6"><a href="#Item_properties"><span class="tocnumber">2</span> <span class="toctext">Item properties</span></a></li>
 </ul>
 </div>
 
-<h1><span class="mw-headline" id="Format">Format</span></h1>
-<h2><span class="mw-headline" id="Items">Items</span></h2>
+<h2><span class="mw-headline" id="Format">Format</span></h2>
+<h3><span class="mw-headline" id="Items">Items</span></h3>
 <ul><li>Bytes 0-1: Pointer to name</li>
 <li>Byte 2: Flags
-<ul><li>Bits 0-5: Who can use it</li>
+<ul><li>Bits 0-5: Who can use it
+<ul><li>0: Ninten</li>
+<li>1: Ana</li>
+<li>2: Lloyd</li>
+<li>3: Teddy</li></ul></li>
 <li>Bit 6: If set, item is edible</li>
 <li>Bit 7: If set, item cannot be dropped</li></ul></li>
 <li>Byte 3: Equipment
@@ -102,11 +106,11 @@
 <li>Byte 4: Item action (non-battle)</li>
 <li>Byte 5: Item action (battle)</li>
 <li>Bytes 6-7: Price</li></ul>
-<h2><span class="mw-headline" id="Teleport_locations">Teleport locations</span></h2>
+<h3><span class="mw-headline" id="Teleport_locations">Teleport locations</span></h3>
 <p>The information that used to be here was incorrect.
 </p><p>Check out <a href="/wiki/EarthBound_Beginnings/Teleport_targets" title="EarthBound Beginnings/Teleport targets">this page</a> instead.
 </p>
-<h2><span class="mw-headline" id="Train_destinations">Train destinations</span></h2>
+<h3><span class="mw-headline" id="Train_destinations">Train destinations</span></h3>
 <ul><li>Bytes 0-1: Pointer to name</li>
 <li>Bytes 2-3:
 <ul><li>Bits 0-5: Music to play</li>
@@ -115,58 +119,933 @@
 <ul><li>Bits 0-5: Start direction</li>
 <li>Bits 6-15: Train start location Y</li></ul></li>
 <li>Bytes 6-7: Price</li></ul>
-<h2><span class="mw-headline" id="Character_levelup_table">Character levelup table</span></h2>
+<h3><span class="mw-headline" id="Character_levelup_table">Character levelup table</span></h3>
 <ul><li>Byte 0: Experience requirement constant</li>
 <li>Bytes 1-2: Unknown</li>
 <li>Bytes 3-7: Stat growth rates</li></ul>
-<h2><span class="mw-headline" id="Known_overworld_action_IDs">Known overworld action IDs</span></h2>
-<p>Unlike the battle actions, the overworld actions' using text is separate from the effect.  That means the Overworld action ID only changes the effect of the item!
+<h2><span class="mw-headline" id="Item_properties">Item properties</span></h2>
+<p>(Blank space indicates value of 0, usually unused)
 </p>
-<ul><li>01 - Interact (using item)</li>
-<li>02 - Equip Item</li></ul>
-<ul><li>03 - <b>Unknown</b></li>
-<li>04 - <b>Unknown</b></li>
-<li>05 - Use Bread</li>
-<li>06 - Use Berry Tofu? (possibly, includes code for Eating it)</li>
-<li>07 - Use Phone Card?</li>
-<li>08 - Repel Ring</li>
-<li>09 - Debug (the item)</li>
-<li>0A - Juice</li>
-<li>0B - Fries</li>
-<li>0C - Magic Herb</li>
-<li>0D - Hamburger</li>
-<li>0E - Sports Drink</li>
-<li>0F - Medicine</li>
-<li>10 - Big Bag</li>
-<li>11 - Antidote</li>
-<li>12 - Mouthwash</li>
-<li>13 - PSI Stone</li>
-<li>14 - Magic Ribbon</li>
-<li>15 - Magic Candy</li>
-<li>16 - Speed Capsule</li>
-<li>17 - Wisdom Capsule</li>
-<li>18 - Strength Capsule</li>
-<li>19 - Force Capsule</li>
-<li>1A - Fight Capsule</li>
-<li>1B - GGF's Diary Text</li></ul>
-<ul><li>1C - Nothing happened</li>
-<li>1D - Nothing happened</li></ul>
-<ul><li>1E - Onyx Hook</li>
-<li>1F - Crumbs</li>
-<li>20 - Final Weapon Text</li>
-<li>21 - Ruler Text</li>
-<li>22 - Map</li>
-<li>23 - Ocarina</li>
-<li>24 - <b>Unknown</b> (Time Machine?)</li></ul>
-<ul><li>25 - Telepathy</li>
-<li>26 - Teleport</li>
-<li>27 - Lifeup a</li>
-<li>28 - Lifeup ß</li>
-<li>29 - Lifeup ?</li>
-<li>2A - Healing ?</li>
-<li>2B - No targeting; Tried PSI! Nothing happened. (Possibly some group Healing?)</li>
-<li>2C - Healing a</li>
-<li>2D - Super Healing</li></ul>
+<table class="wikitable sortable">
+
+<tbody><tr>
+<th>Index</th>
+<th>Item me</th>
+<th>Flags</th>
+<th>Atk/Def/Res</th>
+<th>Overworld <br />action ID</th>
+<th>Battle <br />action ID</th>
+<th>Price
+</th></tr>
+<tr>
+<td>0x0</td>
+<td>(blank)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x1</td>
+<td>Big bag</td>
+<td>0x3F</td>
+<td></td>
+<td>0x10</td>
+<td>0x75</td>
+<td>
+</td></tr>
+<tr>
+<td>0x2</td>
+<td>Phone card</td>
+<td>0x3F</td>
+<td></td>
+<td>0x7</td>
+<td></td>
+<td>50
+</td></tr>
+<tr>
+<td>0x3</td>
+<td>Crumbs</td>
+<td>0x3F</td>
+<td></td>
+<td>0x1F</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x4</td>
+<td>Repel Ring</td>
+<td>0x3F</td>
+<td></td>
+<td>0x8</td>
+<td></td>
+<td>100
+</td></tr>
+<tr>
+<td>0x5-0x9</td>
+<td>(unused)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0xA</td>
+<td>Butterknife</td>
+<td>0x8</td>
+<td>15</td>
+<td>0x2</td>
+<td></td>
+<td>580
+</td></tr>
+<tr>
+<td>0xB</td>
+<td>Surv. Knife</td>
+<td>0x8</td>
+<td>38</td>
+<td>0x2</td>
+<td></td>
+<td>1200
+</td></tr>
+<tr>
+<td>0xC</td>
+<td>Sword</td>
+<td>0x8</td>
+<td>46</td>
+<td>0x2</td>
+<td></td>
+<td>1280
+</td></tr>
+<tr>
+<td>0xD</td>
+<td>Kata</td>
+<td>0x8</td>
+<td>58</td>
+<td>0x2</td>
+<td></td>
+<td>1360
+</td></tr>
+<tr>
+<td>0xE</td>
+<td>Stun Gun</td>
+<td>0x4</td>
+<td>15</td>
+<td>0x2</td>
+<td></td>
+<td>300
+</td></tr>
+<tr>
+<td>0xF</td>
+<td>Air Gun</td>
+<td>0x4</td>
+<td>42</td>
+<td>0x2</td>
+<td></td>
+<td>1400
+</td></tr>
+<tr>
+<td>0x10</td>
+<td>Plastic Bat</td>
+<td>0x1</td>
+<td>3</td>
+<td>0x2</td>
+<td></td>
+<td>80
+</td></tr>
+<tr>
+<td>0x11</td>
+<td>Wooden Bat</td>
+<td>0x1</td>
+<td>12</td>
+<td>0x2</td>
+<td></td>
+<td>500
+</td></tr>
+<tr>
+<td>0x12</td>
+<td>Aluminum Bat</td>
+<td>0x1</td>
+<td>30</td>
+<td>0x2</td>
+<td></td>
+<td>1000
+</td></tr>
+<tr>
+<td>0x13</td>
+<td>Hank's Bat</td>
+<td>0x1</td>
+<td>48</td>
+<td>0x2</td>
+<td></td>
+<td>1400
+</td></tr>
+<tr>
+<td>0x14</td>
+<td>Frying Pan</td>
+<td>0x2</td>
+<td>8</td>
+<td>0x2</td>
+<td></td>
+<td>300
+</td></tr>
+<tr>
+<td>0x15</td>
+<td>Nonstick Pan</td>
+<td>0x2</td>
+<td>16</td>
+<td>0x2</td>
+<td></td>
+<td>700
+</td></tr>
+<tr>
+<td>0x16</td>
+<td>Iron Skillet</td>
+<td>0x2</td>
+<td>36</td>
+<td>0x2</td>
+<td></td>
+<td>1120
+</td></tr>
+<tr>
+<td>0x17</td>
+<td>Slingshot</td>
+<td>0x3F</td>
+<td>7</td>
+<td>0x2</td>
+<td></td>
+<td>120
+</td></tr>
+<tr>
+<td>0x18</td>
+<td>Boomerang</td>
+<td>0x3F</td>
+<td>32</td>
+<td>0x2</td>
+<td></td>
+<td>1100
+</td></tr>
+<tr>
+<td>0x19</td>
+<td>Insecticide</td>
+<td>0x3F</td>
+<td></td>
+<td></td>
+<td>0x16</td>
+<td>300
+</td></tr>
+<tr>
+<td>0x1A</td>
+<td>Super Spray</td>
+<td>0x3F</td>
+<td></td>
+<td></td>
+<td>0x77</td>
+<td>1500
+</td></tr>
+<tr>
+<td>0x1B</td>
+<td>Flea Bag</td>
+<td>0x3F</td>
+<td></td>
+<td></td>
+<td>0x60</td>
+<td>
+</td></tr>
+<tr>
+<td>0x1C</td>
+<td>Words O' Love</td>
+<td>0x3F</td>
+<td></td>
+<td></td>
+<td>0x78</td>
+<td>
+</td></tr>
+<tr>
+<td>0x1D</td>
+<td>Swear Words</td>
+<td>0x3F</td>
+<td></td>
+<td></td>
+<td>0x79</td>
+<td>
+</td></tr>
+<tr>
+<td>0x1E</td>
+<td>Sticky Machine</td>
+<td>0x4</td>
+<td></td>
+<td></td>
+<td>0x6E</td>
+<td>3200
+</td></tr>
+<tr>
+<td>0x1F</td>
+<td>Flashdark</td>
+<td>0x3F</td>
+<td></td>
+<td></td>
+<td>0x6D</td>
+<td>1360
+</td></tr>
+<tr>
+<td>0x20</td>
+<td>Stone Origin</td>
+<td>0x3F</td>
+<td></td>
+<td></td>
+<td>0x3E</td>
+<td>
+</td></tr>
+<tr>
+<td>0x21</td>
+<td>Poison Needle</td>
+<td>0x3F</td>
+<td></td>
+<td></td>
+<td>0x3D</td>
+<td>
+</td></tr>
+<tr>
+<td>0x22</td>
+<td>Flamethrower</td>
+<td>0x4</td>
+<td></td>
+<td></td>
+<td>0x67</td>
+<td>
+</td></tr>
+<tr>
+<td>0x23</td>
+<td>Bomb</td>
+<td>0x4</td>
+<td></td>
+<td></td>
+<td>0x10</td>
+<td>280
+</td></tr>
+<tr>
+<td>0x24</td>
+<td>Super Bomb</td>
+<td>0x4</td>
+<td></td>
+<td></td>
+<td>0x11</td>
+<td>1800
+</td></tr>
+<tr>
+<td>0x25</td>
+<td>Laser Beam</td>
+<td>0x4</td>
+<td></td>
+<td></td>
+<td>0x69</td>
+<td>760
+</td></tr>
+<tr>
+<td>0x26</td>
+<td>Plasma Beam</td>
+<td>0x4</td>
+<td></td>
+<td></td>
+<td>0x6A</td>
+<td>1300
+</td></tr>
+<tr>
+<td>0x27</td>
+<td>(unused)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x28</td>
+<td>Rope</td>
+<td>0x3F</td>
+<td></td>
+<td></td>
+<td>0x47</td>
+<td>600
+</td></tr>
+<tr>
+<td>0x29-0x2C</td>
+<td>Unused</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x2D</td>
+<td>Peace Coin</td>
+<td>0x3F</td>
+<td>5</td>
+<td>0x2</td>
+<td></td>
+<td>260
+</td></tr>
+<tr>
+<td>0x2E</td>
+<td>Protect Coin</td>
+<td>0x3F</td>
+<td>11</td>
+<td>0x2</td>
+<td></td>
+<td>648
+</td></tr>
+<tr>
+<td>0x2F</td>
+<td>Magic Coin</td>
+<td>0x3F</td>
+<td>20</td>
+<td>0x2</td>
+<td></td>
+<td>1200
+</td></tr>
+<tr>
+<td>0x30</td>
+<td>Brass Ring</td>
+<td>0x3F</td>
+<td>8</td>
+<td>0x2</td>
+<td></td>
+<td>460
+</td></tr>
+<tr>
+<td>0x31</td>
+<td>Silver Ring</td>
+<td>0x3F</td>
+<td>14</td>
+<td>0x2</td>
+<td></td>
+<td>825
+</td></tr>
+<tr>
+<td>0x32</td>
+<td>Gold Ring</td>
+<td>0x3F</td>
+<td>28</td>
+<td>0x2</td>
+<td></td>
+<td>1510
+</td></tr>
+<tr>
+<td>0x33</td>
+<td>H2o Pendant</td>
+<td>0x3F</td>
+<td>32</td>
+<td>0x2</td>
+<td></td>
+<td>700
+</td></tr>
+<tr>
+<td>0x34</td>
+<td>Fire Pendant</td>
+<td>0x3F</td>
+<td>16</td>
+<td>0x2</td>
+<td></td>
+<td>700
+</td></tr>
+<tr>
+<td>0x35</td>
+<td>Earth Pendant</td>
+<td>0x3F</td>
+<td>8</td>
+<td>0x2</td>
+<td></td>
+<td>700
+</td></tr>
+<tr>
+<td>0x36</td>
+<td>Sea Pendant</td>
+<td>0x3F</td>
+<td>56</td>
+<td>0x2</td>
+<td></td>
+<td>2860
+</td></tr>
+<tr>
+<td>0x37-0x3B</td>
+<td>(unused)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x3C</td>
+<td>Orange Juice</td>
+<td>0x7F</td>
+<td></td>
+<td>0xA</td>
+<td>0x71</td>
+<td>5
+</td></tr>
+<tr>
+<td>0x3D</td>
+<td>French Fries</td>
+<td>0x7F</td>
+<td></td>
+<td>0xB</td>
+<td>0x72</td>
+<td>15
+</td></tr>
+<tr>
+<td>0x3E</td>
+<td>Magic Herb</td>
+<td>0x7F</td>
+<td></td>
+<td>0xC</td>
+<td>0x73</td>
+<td>30
+</td></tr>
+<tr>
+<td>0x3F</td>
+<td>Hamburger</td>
+<td>0x7F</td>
+<td></td>
+<td>0xD</td>
+<td>0x7A</td>
+<td>25
+</td></tr>
+<tr>
+<td>0x40</td>
+<td>Sports Drink</td>
+<td>0x7F</td>
+<td></td>
+<td>0xE</td>
+<td>0x74</td>
+<td>75
+</td></tr>
+<tr>
+<td>0x41</td>
+<td>LifeUp Cream</td>
+<td>0x3F</td>
+<td></td>
+<td>0xF</td>
+<td>0x7B</td>
+<td>194
+</td></tr>
+<tr>
+<td>0x42</td>
+<td>Asthma Spray</td>
+<td>0x1</td>
+<td></td>
+<td></td>
+<td>0x76</td>
+<td>148
+</td></tr>
+<tr>
+<td>0x43</td>
+<td>Antidote</td>
+<td>0x7F</td>
+<td></td>
+<td>0x11</td>
+<td>0x7C</td>
+<td>20
+</td></tr>
+<tr>
+<td>0x44</td>
+<td>Mouthwash</td>
+<td>0x3F</td>
+<td></td>
+<td>0x12</td>
+<td></td>
+<td>175
+</td></tr>
+<tr>
+<td>0x45</td>
+<td>Berry Tofu</td>
+<td>0x7F</td>
+<td></td>
+<td>0x6</td>
+<td></td>
+<td>975
+</td></tr>
+<tr>
+<td>0x46</td>
+<td>(unused)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x47</td>
+<td>Bread</td>
+<td>0x7F</td>
+<td></td>
+<td>0x5</td>
+<td>0x84</td>
+<td>30
+</td></tr>
+<tr>
+<td>0x48</td>
+<td>Noble Seed</td>
+<td>0x3F</td>
+<td></td>
+<td></td>
+<td>0x5F</td>
+<td>
+</td></tr>
+<tr>
+<td>0x49</td>
+<td>PSI Stone</td>
+<td>0x3</td>
+<td></td>
+<td>0x13</td>
+<td>0x24</td>
+<td>
+</td></tr>
+<tr>
+<td>0x4A</td>
+<td>(unused)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x4B</td>
+<td>Magic Ribbon</td>
+<td>0x2</td>
+<td></td>
+<td>0x14</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x4C</td>
+<td>Magic Candy</td>
+<td>0x44</td>
+<td></td>
+<td>0x15</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x4D</td>
+<td>(unused)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x4E</td>
+<td>Quick Capsule</td>
+<td>0x7F</td>
+<td></td>
+<td>0x16</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x4F</td>
+<td>Wisdom Capsule</td>
+<td>0x7F</td>
+<td></td>
+<td>0x17</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x50</td>
+<td>Physical Capsule</td>
+<td>0x7F</td>
+<td></td>
+<td>0x18</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x51</td>
+<td>Force Capsule</td>
+<td>0x7F</td>
+<td></td>
+<td>0x19</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x52</td>
+<td>Fight Capsule</td>
+<td>0x7F</td>
+<td></td>
+<td>0x1A</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x53-0x54</td>
+<td>(unused)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x55</td>
+<td>Basement Key</td>
+<td>0xBF</td>
+<td></td>
+<td>0x1</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x56</td>
+<td>Zoo Key</td>
+<td>0x3F</td>
+<td></td>
+<td>0x1</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x57</td>
+<td>Ghost Key</td>
+<td>0xBF</td>
+<td></td>
+<td>0x1</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x58</td>
+<td>GGF's Diary</td>
+<td>0xBF</td>
+<td></td>
+<td>0x1B</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x59</td>
+<td>Pass</td>
+<td>0xBF</td>
+<td></td>
+<td>0x1</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x5A</td>
+<td>Ticket</td>
+<td>0x3F</td>
+<td></td>
+<td>0x1</td>
+<td>0x84</td>
+<td>350
+</td></tr>
+<tr>
+<td>0x5B-0x5E</td>
+<td>(unused)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x5F</td>
+<td>Cary Chick</td>
+<td>0xBF</td>
+<td></td>
+<td>0x1</td>
+<td>0x84</td>
+<td>85
+</td></tr>
+<tr>
+<td>0x60</td>
+<td>(unused)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x61</td>
+<td>Bottle Rocket</td>
+<td>0x4</td>
+<td></td>
+<td></td>
+<td>0x7D</td>
+<td>
+</td></tr>
+<tr>
+<td>0x62</td>
+<td>Hat</td>
+<td>0xBF</td>
+<td></td>
+<td>0x1</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x63</td>
+<td>Dentures</td>
+<td>0xBF</td>
+<td></td>
+<td>0x1</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x64</td>
+<td>Ticket Stub</td>
+<td>0x3F</td>
+<td></td>
+<td>0x1</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x65</td>
+<td>IC-Chip</td>
+<td>0x84</td>
+<td></td>
+<td>0x1</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x66</td>
+<td>Ocari</td>
+<td>0xBF</td>
+<td></td>
+<td>0x23</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x67</td>
+<td>(unused)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x68</td>
+<td>Franklin Badge</td>
+<td>0x3F</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x69</td>
+<td>Friendship Ring</td>
+<td>0x0</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x6A</td>
+<td>(unused)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x6B</td>
+<td>Onyx Hook</td>
+<td>0xBF</td>
+<td></td>
+<td>0x1E</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x6C</td>
+<td>Last Weapon</td>
+<td>0x3F</td>
+<td></td>
+<td>0x20</td>
+<td>0x84</td>
+<td>1048
+</td></tr>
+<tr>
+<td>0x6D</td>
+<td>Ruler</td>
+<td>0x3F</td>
+<td></td>
+<td>0x21</td>
+<td></td>
+<td>22
+</td></tr>
+<tr>
+<td>0x6E</td>
+<td>Cash Card</td>
+<td>0xBF</td>
+<td></td>
+<td>0x1</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x6F</td>
+<td>Red Weed</td>
+<td>0x3F</td>
+<td></td>
+<td>0x1</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x70</td>
+<td>Bullhorn</td>
+<td>0x3F</td>
+<td></td>
+<td></td>
+<td>0x3C</td>
+<td>
+</td></tr>
+<tr>
+<td>0x71</td>
+<td>Map</td>
+<td>0xBF</td>
+<td></td>
+<td>0x22</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x72-0x7E</td>
+<td>(unusable debug items)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>0x7F</td>
+<td>(useable debug item)</td>
+<td>0xBF</td>
+<td></td>
+<td>0x9</td>
+<td></td>
+<td>
+</td></tr></tbody></table>
 <!-- 
 NewPP limit report
 Cache expiry: 86400

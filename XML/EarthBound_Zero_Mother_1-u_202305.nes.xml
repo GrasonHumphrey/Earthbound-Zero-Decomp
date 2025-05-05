@@ -322,7 +322,7 @@
 
 ]>
 <PROGRAM NAME="EarthBound_Zero_Mother_1-u_202305.nes" EXE_PATH="/C:/Users/ghumphrey/Documents/Projects/Ghidra Projects/ROMs/earth-bound-zero-mother-1-u_202305/EarthBound_Zero_Mother_1-u_202305.nes" EXE_FORMAT="NES ROM" IMAGE_BASE="0000">
-    <INFO_SOURCE USER="ghumphrey" TOOL="Ghidra 11.3" TIMESTAMP="Thu Apr 17 11:25:47 EDT 2025" />
+    <INFO_SOURCE USER="ghumphrey" TOOL="Ghidra 11.3" TIMESTAMP="Mon May 05 14:02:54 EDT 2025" />
     <PROCESSOR NAME="6502" LANGUAGE_PROVIDER="6502:LE:16:default:default" ENDIAN="little" />
     <DATATYPES>
         <STRUCTURE NAME="AllyData" NAMESPACE="/" SIZE="0x8">
@@ -1015,27 +1015,32 @@
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:a801" END="PRG23_MIRROR1::RAM:a8e1" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:a8e7" END="PRG23_MIRROR1::RAM:ada6" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:adc1" END="PRG23_MIRROR1::RAM:add1" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:adf1" END="PRG23_MIRROR1::RAM:ae5c" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:aeb2" END="PRG23_MIRROR1::RAM:aef2" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:af03" END="PRG23_MIRROR1::RAM:af15" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:af2c" END="PRG23_MIRROR1::RAM:af5b" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:af7a" END="PRG23_MIRROR1::RAM:afec" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:affe" END="PRG23_MIRROR1::RAM:b007" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b0b0" END="PRG23_MIRROR1::RAM:b124" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b1a2" END="PRG23_MIRROR1::RAM:b2d8" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b3c2" END="PRG23_MIRROR1::RAM:b3cd" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b3d3" END="PRG23_MIRROR1::RAM:b3d7" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b3dd" END="PRG23_MIRROR1::RAM:b512" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b555" END="PRG23_MIRROR1::RAM:b5d9" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:aff2" END="PRG23_MIRROR1::RAM:b007" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b037" END="PRG23_MIRROR1::RAM:b040" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b0a4" END="PRG23_MIRROR1::RAM:b130" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b164" END="PRG23_MIRROR1::RAM:b168" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b180" END="PRG23_MIRROR1::RAM:b187" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b1a2" END="PRG23_MIRROR1::RAM:b301" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b319" END="PRG23_MIRROR1::RAM:b31f" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b3c2" END="PRG23_MIRROR1::RAM:b512" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b555" END="PRG23_MIRROR1::RAM:b5e0" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:b626" END="PRG23_MIRROR1::RAM:b67b" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b6b2" END="PRG23_MIRROR1::RAM:b6ba" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:b6b2" END="PRG23_MIRROR1::RAM:b6c3" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:b6fa" END="PRG23_MIRROR1::RAM:b80a" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:b862" END="PRG23_MIRROR1::RAM:ba06" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:ba2a" END="PRG23_MIRROR1::RAM:ba6d" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bae4" END="PRG23_MIRROR1::RAM:baf9" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:bd5b" END="PRG23_MIRROR1::RAM:bd68" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bdd8" END="PRG23_MIRROR1::RAM:be71" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bd7f" END="PRG23_MIRROR1::RAM:bd94" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bdbe" END="PRG23_MIRROR1::RAM:be71" />
         <CODE_BLOCK START="PRG23_MIRROR1::RAM:bef2" END="PRG23_MIRROR1::RAM:bf14" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bf2c" END="PRG23_MIRROR1::RAM:bf57" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bf74" END="PRG23_MIRROR1::RAM:bf8b" />
-        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bfaa" END="PRG23_MIRROR1::RAM:bffd" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bf2c" END="PRG23_MIRROR1::RAM:bf65" />
+        <CODE_BLOCK START="PRG23_MIRROR1::RAM:bf74" END="PRG23_MIRROR1::RAM:bffd" />
         <CODE_BLOCK START="PRG23_MIRROR2::RAM:c909" END="PRG23_MIRROR2::RAM:c990" />
         <CODE_BLOCK START="PRG26_MIRROR1::RAM:a000" END="PRG26_MIRROR1::RAM:a067" />
         <CODE_BLOCK START="PRG26_MIRROR1::RAM:a0b1" END="PRG26_MIRROR1::RAM:a0bc" />
@@ -1129,12 +1134,15 @@
         <DEFINED_DATA ADDRESS="0054" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0055" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0056" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="0057" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="0058" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0059" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="005a" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="005b" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="005c" DATATYPE="undefined2" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="005e" DATATYPE="undefined2" DATATYPE_NAMESPACE="/" SIZE="0x2" />
-        <DEFINED_DATA ADDRESS="0060" DATATYPE="undefined2" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="0060" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="0061" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0062" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0063" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0064" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
@@ -7811,6 +7819,7 @@ To find name:
 PRG24 (text pointer table) -&gt; pointer * 3 + #8000</COMMENT>
         <COMMENT ADDRESS="9800" TYPE="end-of-line">Pointer within bank</COMMENT>
         <COMMENT ADDRESS="9800" TYPE="plate">Item data</COMMENT>
+        <COMMENT ADDRESS="98d8" TYPE="end-of-line">Pointer within bankItemData_</COMMENT>
         <COMMENT ADDRESS="9c00" TYPE="end-of-line">Pointer within bank</COMMENT>
         <COMMENT ADDRESS="9c00" TYPE="plate">Teleport targets</COMMENT>
         <COMMENT ADDRESS="9c40" TYPE="end-of-line">Pointer within bank</COMMENT>
@@ -7929,9 +7938,9 @@ Check: 0xa8bf
 B (on main): 0xa8e7</COMMENT>
         <COMMENT ADDRESS="f2df" TYPE="pre">60,61 hold address of where this was called from
 Y = [4:7] * 2 + 1</COMMENT>
-        <COMMENT ADDRESS="f2ed" TYPE="plate">Does something to reduce the amount of
-damage dealt in combat
-Damage is stored in 0060:0061</COMMENT>
+        <COMMENT ADDRESS="f2ed" TYPE="plate">Calculate final damage from base damage in 60:61
+Finaldamage = Basedamage * (1 +- 0.1 * RandMult)
+Damage is stored in 60:61</COMMENT>
         <COMMENT ADDRESS="f30b" TYPE="pre">BaseDamage *= 0x40</COMMENT>
         <COMMENT ADDRESS="f312" TYPE="pre">X is now 0</COMMENT>
         <COMMENT ADDRESS="f31c" TYPE="pre">Divide base damage by 100
@@ -7946,6 +7955,7 @@ divided base damage</COMMENT>
         <COMMENT ADDRESS="f334" TYPE="pre">Increase base damage</COMMENT>
         <COMMENT ADDRESS="f346" TYPE="pre">Decrease base damage</COMMENT>
         <COMMENT ADDRESS="f357" TYPE="pre">FinalDamage /= 0x40</COMMENT>
+        <COMMENT ADDRESS="f425" TYPE="pre">Get data at 9eea, 9eeb [A * 4]</COMMENT>
         <COMMENT ADDRESS="f49b" TYPE="pre">Move 0x1F values from CHR_ROM_LOC to [0500:051F]</COMMENT>
         <COMMENT ADDRESS="f73b" TYPE="pre">Load [0400:041F] with Char ROM values</COMMENT>
         <COMMENT ADDRESS="f7a4" TYPE="pre">Branch if 00ea &amp;&amp; ACC is &gt;=0</COMMENT>
@@ -8045,7 +8055,8 @@ that can be talked to multiple times with
 different dialog?</COMMENT>
         <COMMENT ADDRESS="PRG19_MIRROR1::RAM:ab14" TYPE="pre">Get the size of the object header</COMMENT>
         <COMMENT ADDRESS="PRG19_MIRROR1::RAM:ab19" TYPE="pre">All this loops until the conversation is
-completely finished</COMMENT>
+completely finished
+Get next object script code</COMMENT>
         <COMMENT ADDRESS="PRG19_MIRROR1::RAM:ab19" TYPE="post">Get the pointer to interactions for NPC
 being talked to</COMMENT>
         <COMMENT ADDRESS="PRG19_MIRROR1::RAM:ab1d" TYPE="pre">This loops until a selection is made</COMMENT>
@@ -8108,6 +8119,7 @@ Pointer to area enemy group at 0068</COMMENT>
 Each area&apos;s encounter rate is converted to an index 0-7,
 which is then used to get the encounter rate from this table.
 Higher number = higher rate of encounter</COMMENT>
+        <COMMENT ADDRESS="PRG20::RAM:9593" TYPE="plate">Area random encounter table</COMMENT>
         <COMMENT ADDRESS="PRG20::RAM:97d0" TYPE="pre">Set A000 to 26</COMMENT>
         <COMMENT ADDRESS="PRG20::RAM:9a54" TYPE="pre">Ninten name loc = 62ca</COMMENT>
         <COMMENT ADDRESS="PRG20::RAM:9a5b" TYPE="pre">Branch if previous entered</COMMENT>
@@ -8143,6 +8155,10 @@ $01-&gt;$e5</COMMENT>
 The action number selects a pointer
 from this table.</COMMENT>
         <COMMENT ADDRESS="PRG22::RAM:990d" TYPE="plate">Battle actions</COMMENT>
+        <COMMENT ADDRESS="PRG22::RAM:991b" TYPE="pre">Attack miss/can&apos;t complete script</COMMENT>
+        <COMMENT ADDRESS="PRG22::RAM:992e" TYPE="pre">Attack SMASH script</COMMENT>
+        <COMMENT ADDRESS="PRG22::RAM:993a" TYPE="pre">Fire tank gun script</COMMENT>
+        <COMMENT ADDRESS="PRG22::RAM:9ebf" TYPE="plate">Attack miss action script</COMMENT>
         <COMMENT ADDRESS="PRG22::RAM:9ec7" TYPE="plate">Battle action targeting data</COMMENT>
         <COMMENT ADDRESS="PRG22_MIRROR1::RAM:a000" TYPE="plate">Enemy data</COMMENT>
         <COMMENT ADDRESS="PRG22_MIRROR1::RAM:a820" TYPE="end-of-line">ENEMY_D</COMMENT>
@@ -8162,6 +8178,8 @@ Unsure what this does, removing it causes slightly less
 smooth status bar movement down</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a1cd" TYPE="pre">Move status bar down</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a1d3" TYPE="pre">Combat has finished</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a3f8" TYPE="plate">Display battle action at index in A
+Battle action table is at PRG0$9081</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a530" TYPE="pre">This loops until action selected</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:a533" TYPE="pre">Carry is set if B pressed on main
 Branch if no action has been selected</COMMENT>
@@ -8229,12 +8247,56 @@ Sets carry if B pressed</COMMENT>
 0 (attack)
 2 (goods, presumably with a heal item selected)</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:aca5" TYPE="pre">Enemy damage dealt calculation?</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:aca5" TYPE="plate">Loops through every attacker and returns
+the attacker with the highest speed in 53</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:aca7" TYPE="pre">60 is used for the attacker index
+61 holds the highest attacker speed</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:acc6" TYPE="pre">62 holds the index of the attacker with the highest speed</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:acdd" TYPE="pre">Display nothing if ally not in party</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ace9" TYPE="pre">Display nothing if ally not fainted</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:acf5" TYPE="pre">Ally has been turned to stone</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad01" TYPE="pre">Ally is paralyzed</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad0d" TYPE="pre">Ally is asleep</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad12" TYPE="pre">Branch if ally wakes up
+1 in 8 chance of waking up every time</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad14" TYPE="pre">Clear asleep status</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad21" TYPE="pre">Display woke up text</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad26" TYPE="pre">Display asleep text</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad32" TYPE="pre">Ally is puzzled/daydreaming</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad3e" TYPE="pre">Ally is having asthma attack</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad41" TYPE="pre">Branch if inhaler used</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad45" TYPE="pre">Display asthma attack text</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad51" TYPE="pre">Ally is roped
+1 in 4 chance to escape each turn</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad58" TYPE="pre">Ally escaped from the rope</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad60" TYPE="pre">Display rope escaped text</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad65" TYPE="pre">Ally is still caught by the rope</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ad71" TYPE="pre">Ally is confused</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ada4" TYPE="pre">Combat action script bits [4:7]
 determine where will be jumped to</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ada7" TYPE="pre">Combat action script functions
 Jump to ptr with index actionScript[4:7]
 actionScript[0:3] will be used for argument</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:adc1" TYPE="plate">Display battle action at index in A
+Battle action table is at PRG0$9081</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:adcf" TYPE="pre">Jump to pointer at [0:3]+1</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:adf1" TYPE="plate">Use PSI ability
+Second byte determines which PSI</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:adf3" TYPE="pre">Get which PSI ability from second byte</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:adfb" TYPE="pre">Multiply PSI ability by 8</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ae08" TYPE="pre">Add offset of start of PSI table</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ae0c" TYPE="pre">Switch bank to access PSI table</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ae0f" TYPE="pre">Offset 7 is PP cost</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ae11" TYPE="pre">Get PP cost for PSI used</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ae13" TYPE="pre">Store PP cost in 004e</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ae15" TYPE="pre">These are probably initial values
+set for every PSI</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ae20" TYPE="pre">Get PSI name pointer
+Store in 0591,0592</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ae38" TYPE="pre">Was PSI blocked?</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ae40" TYPE="pre">Does attacker have enough PP to do attack?</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ae45" TYPE="pre">Load PSI sound effect from 0058</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ae47" TYPE="pre">Play sound effect</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:aeea" TYPE="pre">Get bits [0:3] of actionScript</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:aef0" TYPE="pre">Jump to pointer at [0:3]+1</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:af08" TYPE="pre">Get next byte and store in 0064</COMMENT>
@@ -8245,11 +8307,17 @@ Branch if SMASH</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:af3c" TYPE="pre">Combat_Check_Hit returns here
 Branch if hit</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:af3e" TYPE="pre">Either miss or SMASH happened</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:af40" TYPE="pre">Get the location of the next
+script for either SMASH or miss</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:af59" TYPE="pre">Jump to pointer at [0:3]+1</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:afa4" TYPE="pre">[0:3] of first byte are now in A</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:afa6" TYPE="pre">Get second byte</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:affe" TYPE="pre">Get defender index in 0054</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b000" TYPE="pre">Branch if ally defending</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b002" TYPE="pre">Do this if enemy defending</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b005" TYPE="pre">Do this if ally defending</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b037" TYPE="pre">Get defender index in Y</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b039" TYPE="pre">Branch if ally defending</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b0b0" TYPE="pre">Get attacker index in 53</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b0b2" TYPE="pre">Not sure what AllyData is in 0600
 Appears to be zero if ally cannot attack</COMMENT>
@@ -8274,10 +8342,18 @@ Appears to be zero if ally cannot attack</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b10f" TYPE="pre">Carry set: normal attack
 Carry clear: SMASH</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b111" TYPE="pre">Return to af34</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b112" TYPE="pre">Get attacker index</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b125" TYPE="pre">Get attacker index</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b127" TYPE="pre">Branch if enemy attacking</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b1e0" TYPE="pre">Get enemy index in 0053</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b1e2" TYPE="pre">Get status condition</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b1e7" TYPE="pre">Branch if confused</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b1e9" TYPE="pre">Unsure what 061c holds</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b202" TYPE="pre">Get attacker status condition</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b209" TYPE="pre">Branch if not confused</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b212" TYPE="pre">Set defender to opposite of attacker</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b245" TYPE="pre">Set defender to first enemy or ally</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b249" TYPE="pre">Get next defender in line</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b250" TYPE="pre">Get target defense in 0064 and 0065
 Current target in 0054</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b250" TYPE="plate">Calculate how much damage attacker deals
@@ -8297,15 +8373,47 @@ Current attacker in 0053</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b2c0" TYPE="pre">0061 = OffenseUpper - DefenseUpper</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b2c8" TYPE="pre">Cap minimum to 0</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b2ce" TYPE="pre">Divide 0060 and 0061 by 4</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b2db" TYPE="pre">Get attacker offense and
+store in 4e,4f</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b3c4" TYPE="pre">53 holds index of current attacker</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b3c6" TYPE="pre">Branch if enemy attacking
 (index &gt;= 80)</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b3cb" TYPE="pre">A will have 0xf if enemy attacking,
 0x1 if ally attacking</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b3ce" TYPE="pre">Store second byte in 0058</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b3de" TYPE="pre">Branch if enemy is defender</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b3f3" TYPE="pre">Defender explodes?</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b3fc" TYPE="pre">Defender bursts into flames?</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b498" TYPE="pre">Branch if enemy defending</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b4af" TYPE="pre">Get and display appropriate defender
+death message</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b4cc" TYPE="pre">Load enemy data pointer in 60,61</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b4d8" TYPE="pre">Get byte 8 of enemy data, bits 2:4
+(final action) and store in 60</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b75c" TYPE="pre">Branch to end if combat already finished</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b766" TYPE="pre">Get ally in party status</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b769" TYPE="pre">Continue to next ally if current not in party</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b808" TYPE="pre">Jump to pointer with index of
 second byte passed + 1</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b86b" TYPE="pre">Get defender index</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b93e" TYPE="pre">Get defender index</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b983" TYPE="pre">Enemy damage dealt calculation</COMMENT>
         <COMMENT ADDRESS="PRG23_MIRROR1::RAM:b9a5" TYPE="pre">Ally damage taken calculation</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ba34" TYPE="pre">Get defender in Y</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ba46" TYPE="pre">Get defender in Y</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ba48" TYPE="pre">Get a random number 1-4</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:ba51" TYPE="pre">Set defender health to the random value 1-4 (critical value)</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:bdec" TYPE="pre">Get current health</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:bdef" TYPE="pre">Add healing
+Amount of healing is in 0060</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:bdfc" TYPE="pre">Cap max health to FFFF</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:bfe2" TYPE="pre">Get defender</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:bfe4" TYPE="pre">Branch if defender Ally</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:bfe6" TYPE="pre">0056 holds boss status</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:bfeb" TYPE="pre">Clear carry if defender ally</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:bfed" TYPE="pre">Set carry if defender enemy</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:bfef" TYPE="pre">Get defender</COMMENT>
+        <COMMENT ADDRESS="PRG23_MIRROR1::RAM:bff1" TYPE="pre">Branch if defender enemy</COMMENT>
         <COMMENT ADDRESS="PRG24::RAM:8000" TYPE="end-of-line">CHR ROM Offset low byte</COMMENT>
         <COMMENT ADDRESS="PRG24::RAM:8000" TYPE="plate">Text pointer table</COMMENT>
         <COMMENT ADDRESS="PRG25::RAM:9b03" TYPE="plate">Naming screen text</COMMENT>
@@ -8374,16 +8482,16 @@ Happens every time on overworld standing still</COMMENT>
     </COMMENTS>
     <PROPERTIES>
         <PROPERTY NAME="Program Information.Analysis Times.Times" TYPE="custom" VALUE="&amp;lt;SAVE_STATE&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Basic Constant Reference Analyzer&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;985&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Basic Constant Reference Analyzer&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;1227&amp;quot; /&amp;gt;
     &amp;lt;STATE NAME=&amp;quot;CUSTOM_OPTION_CLASS&amp;quot; TYPE=&amp;quot;string&amp;quot; VALUE=&amp;quot;ghidra.app.plugin.core.analysis.StoredAnalyzerTimes&amp;quot; /&amp;gt;
     &amp;lt;STATE NAME=&amp;quot;Call Convention ID&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;11&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Call-Fixup Installer&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;63&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Create Function&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;241&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Decompiler Switch Analysis&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;2286&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Non-Returning Functions - Discovered&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;123&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Shared Return Calls&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;162&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Stack&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;510&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Subroutine References&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;55&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Call-Fixup Installer&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;65&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Create Function&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;254&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Decompiler Switch Analysis&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;2287&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Non-Returning Functions - Discovered&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;125&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Shared Return Calls&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;204&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Stack&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;577&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Subroutine References&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;62&amp;quot; /&amp;gt;
 &amp;lt;/SAVE_STATE&amp;gt;" />
         <PROPERTY NAME="Program Information.Analyzed" TYPE="bool" VALUE="y" />
         <PROPERTY NAME="Program Information.Created With Ghidra Version" TYPE="string" VALUE="11.3" />
@@ -10705,6 +10813,7 @@ Happens every time on overworld standing still</COMMENT>
         <SYMBOL ADDRESS="0405" NAME="UNK_Timing_0405" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0590" NAME="Combat_DamageTakenLower" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0591" NAME="Combat_DamageTakenUpper" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="0600" NAME="AllyInParty" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0601" NAME="AllyStatusCondition" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0603" NAME="AllyHealthLower" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0604" NAME="AllyHealthUpper" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
@@ -10715,6 +10824,7 @@ Happens every time on overworld standing still</COMMENT>
         <SYMBOL ADDRESS="0609" NAME="AllyDefenseLower" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="060a" NAME="AllyDefenseUpper" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="060b" NAME="AllyFight" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="060c" NAME="AllySpeed" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0610" NAME="Enemy_AttackType" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="061d" NAME="Enemy_AttackUsed" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="2000" NAME="PPUCTRL" NAMESPACE="" TYPE="global" SOURCE_TYPE="IMPORTED" PRIMARY="y" />
@@ -10886,12 +10996,15 @@ Happens every time on overworld standing still</COMMENT>
         <SYMBOL ADDRESS="8554" NAME="STR_PK_Freeze_&#x3B1;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="8560" NAME="STR_PK_Freeze_&#xDF;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="856c" NAME="STR_PK_Freeze_&#x3C4;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
+        <SYMBOL ADDRESS="8578" NAME="STR_PK_Freeze_&#x3A9;" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="8584" NAME="STR_PK_Fire_&#x3B1;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="858e" NAME="STR_PK_Fire_&#xDF;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="8598" NAME="STR_PK_Fire_&#x3C4;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
+        <SYMBOL ADDRESS="85a2" NAME="STR_PK_Fire_&#x3A9;" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="85ac" NAME="STR_PK_Beam_&#x3B1;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="85b6" NAME="STR_PK_Beam_&#xDF;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="85c0" NAME="STR_PK_Beam_&#x3C4;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
+        <SYMBOL ADDRESS="85ca" NAME="STR_PK_Beam_&#x3A9;" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="85d4" NAME="STR_PK_Thunder&#x3B1;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="85e0" NAME="STR_PK_Thunder&#xDF;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="85ec" NAME="STR_PK_Thunder&#x3C4;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
@@ -11047,8 +11160,144 @@ Happens every time on overworld standing still</COMMENT>
         <SYMBOL ADDRESS="8e5a" NAME="STR_???You_can&apos;t_now." NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="8e6c" NAME="STR_????in&lt;SKIP1&gt;cannot." NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="8e7a" NAME="STR_?&lt;WAIT&gt;??in&lt;SKIP1&gt;" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
-        <SYMBOL ADDRESS="9093" NAME="StrPtr_BattleAction_Scratch" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9081" NAME="TextPtrPtr_blank" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9093" NAME="TextPtrPtr_Scratch" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="910f" NAME="TextPtrPtr_TurnedIntoStone" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9123" NAME="TextPtrPtr_PsiBlocked" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9129" NAME="TextPtrPtr_NotEnoughPPs" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="912d" NAME="TextPtrPtr_AsthmaAttack" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9151" NAME="TextPtrPtr_DayDreaming" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9197" NAME="TextPtrPtr_EscapedRope" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="919d" NAME="TextPtrPtr_WokeUp" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="924a" NAME="STR_Battle_Window_Top" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9800" NAME="ItemData_Blank" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9808" NAME="ItemData_Big_Bag" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9810" NAME="ItemData_Phone_Card" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9818" NAME="ItemData_Crumbs" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9820" NAME="ItemData_Repel_Ring" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9828" NAME="ItemData_ButterKnife" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9830" NAME="ItemData_ButterKnife2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9838" NAME="ItemData_ButterKnife3" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9840" NAME="ItemData_ButterKnife4" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9848" NAME="ItemData_ButterKnife5" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9850" NAME="ItemData_ButterKnife6" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9858" NAME="ItemData_SurvKnife" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9860" NAME="ItemData_Sword" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9868" NAME="ItemData_Katana" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9870" NAME="ItemData_Stun_Gun" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9878" NAME="ItemData_Air_Gun" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9880" NAME="ItemData_Plastic_Bat" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9888" NAME="ItemData_Wooden_Bat" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9890" NAME="ItemData_AluminumBat" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9898" NAME="ItemData_Hanks_Bat" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="98a0" NAME="ItemData_Frying_Pan" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="98a8" NAME="ItemData_NonstickPan" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="98b0" NAME="ItemData_IronSkillet" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="98b8" NAME="ItemData_Slingshot" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="98c0" NAME="ItemData_Boomerang" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="98c8" NAME="ItemData_Insecticide" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="98d0" NAME="ItemData_Super_Spray" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="98d8" NAME="ItemData_Flea_Bag" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="98e0" NAME="ItemData_WordsOLove" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="98e8" NAME="ItemData_Swear_Words" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="98f0" NAME="ItemData_StkyMachine" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="98f8" NAME="ItemData_Flashdark" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9900" NAME="ItemData_StoneOrigin" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9908" NAME="ItemData_PoisnNeedle" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9910" NAME="ItemData_Fl_Thrower" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9918" NAME="ItemData_Bomb" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9920" NAME="ItemData_Super_Bomb" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9928" NAME="ItemData_Laser_Beam" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9930" NAME="ItemData_Plasma_Beam" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9938" NAME="ItemData_Rope" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9940" NAME="ItemData_Rope2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9948" NAME="ItemData_Peace_Coin" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9950" NAME="ItemData_Peace_Coin2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9958" NAME="ItemData_Peace_Coin3" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9960" NAME="ItemData_Peace_Coin4" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9968" NAME="ItemData_Peace_Coin5" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9970" NAME="ItemData_ProtectCoin" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9978" NAME="ItemData_Magic_Coin" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9980" NAME="ItemData_Brass_Ring" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9988" NAME="ItemData_Silver_Ring" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9990" NAME="ItemData_Gold_Ring" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9998" NAME="ItemData_H2o_Pendant" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="99a0" NAME="ItemData_FirePendant" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="99a8" NAME="ItemData_EarthPendant" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="99b0" NAME="ItemData_Sea_Pendant" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="99b8" NAME="ItemData_OrangeJuice" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="99c0" NAME="ItemData_OrangeJuice2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="99c8" NAME="ItemData_OrangeJuice3" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="99d0" NAME="ItemData_OrangeJuice4" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="99d8" NAME="ItemData_OrangeJuice5" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="99e0" NAME="ItemData_OrangeJuiceReal" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="99e8" NAME="ItemData_FrenchFries" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="99f0" NAME="ItemData_MagicHerb" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="99f8" NAME="ItemData_Hamburger" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a00" NAME="ItemData_SportsDrink" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a08" NAME="ItemData_LifeUpCream" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a10" NAME="ItemData_AsthmaSpray" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a18" NAME="ItemData_Antidote" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a20" NAME="ItemData_Mouthwash" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a28" NAME="ItemData_Berry_Tofu" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a30" NAME="ItemData_Bread" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a38" NAME="ItemData_Bread2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a40" NAME="ItemData_Noble_Seed" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a48" NAME="ItemData_PSI_Stone" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a50" NAME="ItemData_MagicRibbon" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a58" NAME="ItemData_MagicRibbon2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a60" NAME="ItemData_Magic_Candy" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a68" NAME="ItemData_QuickCapsul" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a70" NAME="ItemData_QuickCapsul2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a78" NAME="ItemData_Wisdom_Caps" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a80" NAME="ItemData_PhysicalCap" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a88" NAME="ItemData_ForceCapsul" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a90" NAME="ItemData_FightCapsul" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9a98" NAME="ItemData_BasementKey" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9aa0" NAME="ItemData_BasementKey2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9aa8" NAME="ItemData_BasementKey3" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ab0" NAME="ItemData_Zoo_Key" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ab8" NAME="ItemData_Ghost_Key" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ac0" NAME="ItemData_GGFsDiary" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ac8" NAME="ItemData_Pass" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ad0" NAME="ItemData_Ticket" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ad8" NAME="ItemData_CanaryChick" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ae0" NAME="ItemData_CanaryChick2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ae8" NAME="ItemData_CanaryChick3" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9af0" NAME="ItemData_CanaryChick4" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9af8" NAME="ItemData_CanaryChick5" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b00" NAME="ItemData_BottlRocket" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b08" NAME="ItemData_BottlRocket2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b10" NAME="ItemData_Hat" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b18" NAME="ItemData_Dentures" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b20" NAME="ItemData_Ticket_Stub" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b28" NAME="ItemData_IC-chip" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b30" NAME="ItemData_Ocarina" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b38" NAME="ItemData_FranklnBdge" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b40" NAME="ItemData_FranklnBdge2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b48" NAME="ItemData_FrndshpRing" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b50" NAME="ItemData_Onyx_Hook" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b58" NAME="ItemData_Onyx_Hook2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b60" NAME="ItemData_Last_Weapon" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b68" NAME="ItemData_Ruler" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b70" NAME="ItemData_Cash_Card" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b78" NAME="ItemData_Red_Weed" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b80" NAME="ItemData_Bullhorn" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b88" NAME="ItemData_Map" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b90" NAME="ItemData_Debug" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9b98" NAME="ItemData_Debug2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ba0" NAME="ItemData_Debug3" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ba8" NAME="ItemData_Debug4" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9bb0" NAME="ItemData_Debug5" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9bb8" NAME="ItemData_Debug6" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9bc0" NAME="ItemData_Debug7" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9bc8" NAME="ItemData_Debug8" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9bd0" NAME="ItemData_Debug9" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9bd8" NAME="ItemData_DebugA" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9be0" NAME="ItemData_DebugB" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9be8" NAME="ItemData_DebugC" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9bf0" NAME="ItemData_DebugD" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9bf8" NAME="ItemData_DebugE" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="9c80" NAME="TRAIN_Reindeer_Union" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="9c88" NAME="TRAIN_Spookane_Union" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="9c90" NAME="TRAIN_Snowman_Union" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
@@ -11069,6 +11318,60 @@ Happens every time on overworld standing still</COMMENT>
         <SYMBOL ADDRESS="9de8" NAME="ALLY_Pippi" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="9df0" NAME="ALLY_EVE" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="9df8" NAME="ALLY_FlyingMan" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e00" NAME="PSIData_Blank" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e08" NAME="PSIData_Telepathy" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e10" NAME="PSIData_Teleport" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e18" NAME="PSIData_LifeUp_A_1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e20" NAME="PSIData_LifeUp_A_2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e28" NAME="PSIData_LifeUp_A_3" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e30" NAME="PSIData_LifeUp_A_4" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e38" NAME="PSIData_LifeUp_A_5" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e40" NAME="PSIData_LifeUp_A_Real" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e48" NAME="PSIData_LifeUp_B" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e50" NAME="PSIData_LifeUp_T" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e58" NAME="PSIData_LifeUp_P" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e60" NAME="PSIData_LifeUp_O" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e68" NAME="PSIData_Healing_A_1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e70" NAME="PSIData_Healing_A_2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e78" NAME="PSIData_Healing_A_3" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e80" NAME="PSIData_Healing_A_Real" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e88" NAME="PSIData_Healing_B" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e90" NAME="PSIData_Healing_T" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9e98" NAME="PSIData_Healing_P" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ea0" NAME="PSIData_SuprHealing" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ea8" NAME="PSIData_PSIShield_A" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9eb0" NAME="PSIData_PSIShield_B" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9eb8" NAME="PSIData_PowerShield" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ec0" NAME="PSIData_BrainShock" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ec8" NAME="PSIData_BrainCyclon" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ed0" NAME="PSIData_Hypnosis" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ed8" NAME="PSIData_Paralysis" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ee0" NAME="PSIData_Darkness" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ee8" NAME="PSIData_PSIMagnet" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ef0" NAME="PSIData_ShieldOff" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9ef8" NAME="PSIData_PSIBlock" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f00" NAME="PSIData_OffenseUp" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f08" NAME="PSIData_DefenseUp_A" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f10" NAME="PSIData_DefenseUp_B" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f18" NAME="PSIData_QuickUp" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f20" NAME="PSIData_DefDown_A" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f28" NAME="PSIData_DefDown_B" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f30" NAME="PSIData_4thDSlip" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f38" NAME="PSIData_Hypnosis" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f40" NAME="PSIData_PK_Freeze_A" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f48" NAME="PSIData_PK_Freeze_B" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f50" NAME="PSIData_PK_Freeze_T" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f58" NAME="PSIData_PK_Freeze_O" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f60" NAME="PSIData_PK_Fire_A" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f68" NAME="PSIData_PK_Fire_B" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f70" NAME="PSIData_PK_Fire_T" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f78" NAME="PSIData_PK_Fire_O" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f80" NAME="PSIData_PK_Beam_A" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f88" NAME="PSIData_PK_Beam_B" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f90" NAME="PSIData_PK_Beam_T" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9f98" NAME="PSIData_PK_Beam_O" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9fa0" NAME="PSIData_PK_ThunderA" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="9fa8" NAME="PSIData_PK_ThunderB" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="a000" NAME="MIRRORING" NAMESPACE="" TYPE="global" SOURCE_TYPE="IMPORTED" PRIMARY="y" />
         <SYMBOL ADDRESS="a001" NAME="PRG_RAM_PROTECT" NAMESPACE="" TYPE="global" SOURCE_TYPE="IMPORTED" PRIMARY="y" />
         <SYMBOL ADDRESS="bcec" NAME="Unload_Room_2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
@@ -11114,7 +11417,9 @@ Happens every time on overworld standing still</COMMENT>
         <SYMBOL ADDRESS="f25e" NAME="Wait_X_Frames" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="f2ae" NAME="Call_Ptr_APlus1_RetToPtr0" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="f2d5" NAME="Do_SelectedMenuItem" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="f2ed" NAME="Combat_Calc_Final_Damage" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="f2ed" NAME="Add_10PercentNorm_60_61" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="f3fd" NAME="Add_10PercentNorm_A" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="f41f" NAME="PlaySoundEffect" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="f496" NAME="Init_RAM_0500_051F" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="f4ce" NAME="Combat_DrawAnimateResultsBox" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="f732" NAME="Init_RAM_0400_041F" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
@@ -12785,12 +13090,13 @@ Happens every time on overworld standing still</COMMENT>
         <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:ab0f" NAME="MenuAction_Talk_2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:ab19" NAME="Talk_NextPrompt" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:ab3e" NAME="Talk_Set_Ptrs_ROM_Bank" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:ab5e" NAME="MenuAction_Talk_3" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:ab5e" NAME="ObjScript_DoNext" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:ab69" NAME="Talk_ResponseAddr_Lower" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:ab6a" NAME="Talk_ResponseAddr_Upper" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:ac71" NAME="ObjScript_0B_Jump_Unless_CHECKing" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:ac8d" NAME="Talk_Podunk_Food" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:acb7" NAME="Talk_Store_Finish" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:ad0c" NAME="ObjScript_08_Display_Text_Ptr" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:ad0d" NAME="ObjScript_08_Display_Text" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:ad1a" NAME="UNK_Text_Setup_CHR_ROM" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG19_MIRROR1::RAM:ae4a" NAME="Talk_Podunk_Food_OrangJuice" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
@@ -13069,6 +13375,7 @@ Happens every time on overworld standing still</COMMENT>
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:a1a4" NAME="CombatLoop_ActionSelected" NAMESPACE="Combat_Loop::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:a1d3" NAME="CombatLoop_CombatFinished" NAMESPACE="Combat_Loop::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:a3f8" NAME="Combat_DisplayActionTextA" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:a479" NAME="Combat_DisplayText" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:a50a" NAME="Combat_Loop_WaitForAction_1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:a53f" NAME="Combat_Loop_WaitForAction_2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:a559" NAME="AutoSelected" NAMESPACE="Combat_Loop_WaitForAction_2::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
@@ -13093,40 +13400,101 @@ Happens every time on overworld standing still</COMMENT>
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:a991" NAME="Combat_Fight_SelectTarget_2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:ac23" NAME="Combat_Get_Auto_MenuItem" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:ac6a" NAME="Combat_CalculateDisplayResults" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:aca5" NAME="Get_Next_Attacker_In_53" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:acd6" NAME="Combat_DisplayStatusText" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:ad7b" NAME="Get_Enemy_Attack_Text" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:ad9c" NAME="Do_Combat_Action_Script" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:ad9c" NAME="CombatActionScript_DoAction" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:adc4" NAME="CombatActionScript_0x" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:adc9" NAME="CombatActionScript_1x" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:adf1" NAME="CombatActionScript_2x" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:ae53" NAME="PSIBlocked" NAMESPACE="CombatActionScript_2x::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:ae58" NAME="NotEnoughPPs" NAMESPACE="CombatActionScript_2x::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:aeea" NAME="CombatActionScript_5x" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:af03" NAME="CombatActionScript_5x_Ret" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:af08" NAME="CombatActionScript_6x" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:af2c" NAME="CombatActionScript_6x_Ret" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:af31" NAME="CombatActionScript_7x" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:af39" NAME="CombatActionScript_8x" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:af3e" NAME="Branch_Condition_Happened" NAMESPACE="CombatActionScript_8x::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:af4e" NAME="CombatActionScript_7x_End" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:af53" NAME="CombatActionScript_8x_Thunk" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:af53" NAME="CombatActionScript_7x_8x_Thunk" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:af7a" NAME="CombatActionScript_8x_Ret" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:af7b" NAME="CombatActionScript_9x" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:af92" NAME="CombatActionScript_Ax" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:af98" NAME="CombatActionScript_Bx" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:afcd" NAME="Get_Do_Next_Combat_Action" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:afd3" NAME="Set_Next_CombatAction_Location" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:afe1" NAME="Get_Next_Combat_Action" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:aff2" NAME="CombatActionScript_11_EndCombat" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:affe" NAME="CombatActionScript_12" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b0b0" NAME="CombatActionScript_80_CLCIfCanAttack" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b0cc" NAME="Combat_Check_Hit" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b0f7" NAME="Combat_Check_Smash" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b037" NAME="CombatActionScript_17" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b0b0" NAME="CombatActionScript_80_BranchIfCantAttack" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b0bc" NAME="CombatActionScript_86_BranchIfDefenderFainted" NAMESPACE="CombatActionScript_80_BranchIfCantAttack::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b0cc" NAME="CombatActionScript_71_BranchIfDodge" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b0f7" NAME="CombatActionScript_72_BranchIfSMASH" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b112" NAME="CombatActionScript_73_BranchIfMiss" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b125" NAME="CombatActionScript_74_BranchIfTank" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b164" NAME="CombatActionScript_78_Branch50_50" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b180" NAME="CombatActionScript_7B_BranchIfCantRun" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b1a2" NAME="Combat_Check_Attack_Miss_SMASH" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b1e0" NAME="Combat_ActionScript_51" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b1ef" NAME="DoConfusion" NAMESPACE="Combat_ActionScript_51::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b1c5" NAME="Combat_Check_If_PSI_Blocked" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b1d1" NAME="Combat_ReducePP" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b1e0" NAME="CombatActionScript_51_CheckConfusionFight" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b1ef" NAME="DoConfusion" NAMESPACE="CombatActionScript_51_CheckConfusionFight::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b202" NAME="CombatActionScript_52_CheckConfusionPSI" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b23d" NAME="CombatActionScript_55_TargetFirstAttacker" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b248" NAME="CombatActionScript_56_TargetNextDefender" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b250" NAME="Combat_Calc_Base_Damage" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b2d9" NAME="CombatActionScript_61_CalcSmash" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b2f9" NAME="CombatActionScript_62_SetBaseDamageHeal" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b319" NAME="CombatActionScript_64" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b3c2" NAME="CombatActionScript_66" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b3ce" NAME="CombatActionScript_67_SetAttackSFX" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b3d3" NAME="CombatActionScript_68_DisplayText" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b3d8" NAME="CombatActionScript_69_PlaySound" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b3dd" NAME="Combat_Do_InstantKill" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b40b" NAME="Defender_Death_SpecialAction" NAMESPACE="Combat_Do_InstantKill::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b42d" NAME="Make_Defender_Fainted" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b496" NAME="Display_Defender_Fainted_Message" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b4ca" NAME="Check_Defender_FinalAction" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b5d3" NAME="CombatActionScript_12_EnemyDefending" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b5da" NAME="CombatActionScript_17_EnemyDefending" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b6b2" NAME="CombatActionScript_12_AllyDefending" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b6bb" NAME="CombatActionScript_17_AllyDefending" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b6fa" NAME="CombatActionScript_12_AllyDefending_2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b804" NAME="CombatActionScript_4x" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
-        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b915" NAME="CombatActionScript_40_06_FightDamageFinalCalc" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b863" NAME="CombatActionScript_4x_Ret" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b868" NAME="CombatActionScript_40_00_Heal" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b915" NAME="CombatActionScript_40_06_DamageFinalCalc" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:b93e" NAME="Attack_Normal_Enemy" NAMESPACE="CombatActionScript_40_06_DamageFinalCalc::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:ba2a" NAME="CombatActionScript_40_09_PKFireOmega" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:ba3c" NAME="CombatActionScript_40_0A_PKFreezeGamma" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:bae4" NAME="CombatActionScript_40_12_Dark" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:bd5b" NAME="Display_Healing_Results" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:bddd" NAME="Combat_Call_Calc_Final_Damage" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:bdeb" NAME="Do_Healing_2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:bef2" NAME="Do_Healing" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:bf2c" NAME="Get_Byte_Y_From_Enemy_X" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:bfe2" NAME="SEC_If_Defender_Boss" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG23_MIRROR1::RAM:bfef" NAME="CLC_If_Defender_Enemy_or_NormalAlly" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:86ae" NAME="TextPtr_ShopConfirm" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG24::RAM:87ef" NAME="TextPtr_Reindeer_Hospital_NPC1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:8813" NAME="TextPtr_ShopWelcome" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:8816" NAME="TextPtr_ShopThanksToGo" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:8918" NAME="TextPtr_ShopDontNeed" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:891b" NAME="TextPtr_ShopFinish" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:89b1" NAME="TextPtr_ShopNotEnoughMoney" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:89b4" NAME="TextPtr_ShopInventoryFull" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG24::RAM:8aef" NAME="TextPtr_Podunk_Sign_CityHall" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:8ba9" NAME="TextPtr_ShopAnythingElse" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:9194" NAME="TextPtr_blank" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:9269" NAME="TextPtr_TurnedIntoStone" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:9287" NAME="TextPtr_PSIBlocked" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:9290" NAME="TextPtr_NotEnoughPPs" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:9296" NAME="TextPtr_AsthmaAttack" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:92cc" NAME="TextPtr_DayDreaming" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:9335" NAME="TextPtr_EscapedRope" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG24::RAM:933e" NAME="TextPtr_WokeUp" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG25::RAM:9800" NAME="STR_(p&lt;WAIT_THEN_OVERWRITE&gt;_?9?bSMAAAASH!!?&lt;SKIP1&gt;9?bSMAAAASH!!?&lt;SKIP1&gt;9?bSMAAAASH!!is&lt;SKIP1&gt;9?bSMAAAASH!!the&lt;SKIP1&gt;?&#x3C4;s??t&#x3C4;t??u?&#x3C4;???in&#x3C4;is??il?)&#x25BA;?V??_&lt;SKIP1&gt;isv?w?H)" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG25::RAM:9844" NAME="STR_?t??is?)" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG25::RAM:984c" NAME="STR_?&#x3C0;??is??&lt;WAIT_THEN_OVERWRITE&gt;_" NAMESPACE="" TYPE="global" SOURCE_TYPE="ANALYSIS" PRIMARY="y" />
@@ -13698,18 +14066,18 @@ Check: 0xa8bf
 B (on main): 0xa8e7</REGULAR_CMT>
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="f2ed" NAME="Combat_Calc_Final_Damage" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="f2ed" NAME="Add_10PercentNorm_60_61" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="f2ed" END="f37c" />
-            <REGULAR_CMT>Does something to reduce the amount of
-damage dealt in combat
-Damage is stored in 0060:0061</REGULAR_CMT>
+            <REGULAR_CMT>Calculate final damage from base damage in 60:61
+Finaldamage = Basedamage * (1 +- 0.1 * RandMult)
+Damage is stored in 60:61</REGULAR_CMT>
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="f3fd" NAME="FUN_f3fd" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="f3fd" NAME="Add_10PercentNorm_A" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="f3fd" END="f41e" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="f41f" NAME="FUN_f41f" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="f41f" NAME="PlaySoundEffect" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="f41f" END="f464" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
@@ -14077,7 +14445,7 @@ Loops until transaction finished when shopping.</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG19_MIRROR1::RAM:ab48" END="PRG19_MIRROR1::RAM:ab52" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG19_MIRROR1::RAM:ab5e" NAME="MenuAction_Talk_3" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG19_MIRROR1::RAM:ab5e" NAME="ObjScript_DoNext" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG19_MIRROR1::RAM:ab5e" END="PRG19_MIRROR1::RAM:ab68" />
             <REGULAR_CMT>Takes the correct action for what
 person/selection is being talked to.</REGULAR_CMT>
@@ -14492,9 +14860,11 @@ person/selection is being talked to.</REGULAR_CMT>
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:a3f8" NAME="Combat_DisplayActionTextA" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:a3f8" END="PRG23_MIRROR1::RAM:a478" />
+            <REGULAR_CMT>Display battle action at index in A
+Battle action table is at PRG0$9081</REGULAR_CMT>
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:a479" NAME="FUN_PRG23_MIRROR1__a479" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:a479" NAME="Combat_DisplayText" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:a479" END="PRG23_MIRROR1::RAM:a4ba" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
@@ -14663,11 +15033,13 @@ Sets carry if B pressed</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:ac6a" END="PRG23_MIRROR1::RAM:aca4" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:aca5" NAME="FUN_PRG23_MIRROR1__aca5" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:aca5" NAME="Get_Next_Attacker_In_53" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:aca5" END="PRG23_MIRROR1::RAM:acd5" />
+            <REGULAR_CMT>Loops through every attacker and returns
+the attacker with the highest speed in 53</REGULAR_CMT>
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:acd6" NAME="FUN_PRG23_MIRROR1__acd6" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:acd6" NAME="Combat_DisplayStatusText" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:acd6" END="PRG23_MIRROR1::RAM:ad7a" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
@@ -14675,12 +15047,28 @@ Sets carry if B pressed</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:ad7b" END="PRG23_MIRROR1::RAM:ad9b" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:ad9c" NAME="Do_Combat_Action_Script" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:ad9c" NAME="CombatActionScript_DoAction" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:ad9c" END="PRG23_MIRROR1::RAM:ada6" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:adc1" NAME="Combat_DisplayActionTextA" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:adc1" END="PRG23_MIRROR1::RAM:adc3" />
+            <REGULAR_CMT>Display battle action at index in A
+Battle action table is at PRG0$9081</REGULAR_CMT>
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:adc4" NAME="CombatActionScript_0x" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:adc4" END="PRG23_MIRROR1::RAM:adc8" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:adc9" NAME="CombatActionScript_1x" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:adc9" END="PRG23_MIRROR1::RAM:add1" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:adf1" NAME="CombatActionScript_2x" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:adf1" END="PRG23_MIRROR1::RAM:ae5c" />
+            <REGULAR_CMT>Use PSI ability
+Second byte determines which PSI</REGULAR_CMT>
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:aeb2" NAME="FUN_PRG23_MIRROR1__aeb2" LIBRARY_FUNCTION="n">
@@ -14715,8 +15103,12 @@ Sets carry if B pressed</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:af4e" END="PRG23_MIRROR1::RAM:af52" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:af53" NAME="CombatActionScript_8x_Thunk" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:af53" NAME="CombatActionScript_7x_8x_Thunk" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:af53" END="PRG23_MIRROR1::RAM:af5b" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:af98" NAME="CombatActionScript_Bx" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:af98" END="PRG23_MIRROR1::RAM:afcc" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:afcd" NAME="Get_Do_Next_Combat_Action" LIBRARY_FUNCTION="n">
@@ -14731,43 +15123,67 @@ Sets carry if B pressed</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:afe1" END="PRG23_MIRROR1::RAM:afec" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:aff2" NAME="CombatActionScript_11_EndCombat" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:aff2" END="PRG23_MIRROR1::RAM:affd" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:affe" NAME="CombatActionScript_12" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:affe" END="PRG23_MIRROR1::RAM:b007" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b0b0" NAME="CombatActionScript_80_CLCIfCanAttack" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b037" NAME="CombatActionScript_17" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b037" END="PRG23_MIRROR1::RAM:b040" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b0a4" NAME="FUN_PRG23_MIRROR1__b0a4" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b0a4" END="PRG23_MIRROR1::RAM:b0af" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b0b0" NAME="CombatActionScript_80_BranchIfCantAttack" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b0b0" END="PRG23_MIRROR1::RAM:b0cb" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b0cc" NAME="Combat_Check_Hit" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b0cc" NAME="CombatActionScript_71_BranchIfDodge" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b0cc" END="PRG23_MIRROR1::RAM:b0f6" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b0f7" NAME="Combat_Check_Smash" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b0f7" NAME="CombatActionScript_72_BranchIfSMASH" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b0f7" END="PRG23_MIRROR1::RAM:b111" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b112" NAME="FUN_PRG23_MIRROR1__b112" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b112" NAME="CombatActionScript_73_BranchIfMiss" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b112" END="PRG23_MIRROR1::RAM:b124" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b125" NAME="CombatActionScript_74_BranchIfTank" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b125" END="PRG23_MIRROR1::RAM:b130" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b164" NAME="CombatActionScript_78_Branch50_50" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b164" END="PRG23_MIRROR1::RAM:b168" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b180" NAME="CombatActionScript_7B_BranchIfCantRun" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b180" END="PRG23_MIRROR1::RAM:b187" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b1a2" NAME="Combat_Check_Attack_Miss_SMASH" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b1a2" END="PRG23_MIRROR1::RAM:b1c4" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b1c5" NAME="FUN_PRG23_MIRROR1__b1c5" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b1c5" NAME="Combat_Check_If_PSI_Blocked" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b1c5" END="PRG23_MIRROR1::RAM:b1d0" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b1d1" NAME="FUN_PRG23_MIRROR1__b1d1" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b1d1" NAME="Combat_ReducePP" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b1d1" END="PRG23_MIRROR1::RAM:b1de" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b1e0" NAME="Combat_ActionScript_51" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b1e0" NAME="CombatActionScript_51_CheckConfusionFight" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b1e0" END="PRG23_MIRROR1::RAM:b201" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b202" NAME="FUN_PRG23_MIRROR1__b202" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b202" NAME="CombatActionScript_52_CheckConfusionPSI" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b202" END="PRG23_MIRROR1::RAM:b21c" />
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b22d" END="PRG23_MIRROR1::RAM:b237" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
@@ -14776,11 +15192,11 @@ Sets carry if B pressed</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b238" END="PRG23_MIRROR1::RAM:b23c" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b23d" NAME="FUN_PRG23_MIRROR1__b23d" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b23d" NAME="CombatActionScript_55_TargetFirstAttacker" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b23d" END="PRG23_MIRROR1::RAM:b247" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b248" NAME="FUN_PRG23_MIRROR1__b248" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b248" NAME="CombatActionScript_56_TargetNextDefender" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b248" END="PRG23_MIRROR1::RAM:b24f" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
@@ -14791,27 +15207,47 @@ Sets carry if B pressed</REGULAR_CMT>
 BaseDamage = [(offense * 3) - defense] / 4</REGULAR_CMT>
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b2d9" NAME="CombatActionScript_61_CalcSmash" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b2d9" END="PRG23_MIRROR1::RAM:b2f8" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b2f9" NAME="CombatActionScript_62_SetBaseDamageHeal" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b2f9" END="PRG23_MIRROR1::RAM:b301" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b319" NAME="CombatActionScript_64" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b319" END="PRG23_MIRROR1::RAM:b31f" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b3c2" NAME="CombatActionScript_66" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b3c2" END="PRG23_MIRROR1::RAM:b3cd" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b3ce" NAME="CombatActionScript_67_SetAttackSFX" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b3ce" END="PRG23_MIRROR1::RAM:b3d2" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b3d3" NAME="CombatActionScript_68_DisplayText" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b3d3" END="PRG23_MIRROR1::RAM:b3d7" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b3dd" NAME="FUN_PRG23_MIRROR1__b3dd" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b3d8" NAME="CombatActionScript_69_PlaySound" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b3d8" END="PRG23_MIRROR1::RAM:b3dc" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b3dd" NAME="Combat_Do_InstantKill" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b3dd" END="PRG23_MIRROR1::RAM:b42c" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b42d" NAME="FUN_PRG23_MIRROR1__b42d" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b42d" NAME="Make_Defender_Fainted" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b42d" END="PRG23_MIRROR1::RAM:b495" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b496" NAME="FUN_PRG23_MIRROR1__b496" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b496" NAME="Display_Defender_Fainted_Message" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b496" END="PRG23_MIRROR1::RAM:b4c9" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b4ca" NAME="FUN_PRG23_MIRROR1__b4ca" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b4ca" NAME="Check_Defender_FinalAction" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b4ca" END="PRG23_MIRROR1::RAM:b4e4" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
@@ -14833,11 +15269,22 @@ BaseDamage = [(offense * 3) - defense] / 4</REGULAR_CMT>
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b5d3" NAME="CombatActionScript_12_EnemyDefending" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b5d3" END="PRG23_MIRROR1::RAM:b5d9" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b5da" NAME="CombatActionScript_17_EnemyDefending" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b5da" END="PRG23_MIRROR1::RAM:b5e0" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b626" NAME="FUN_PRG23_MIRROR1__b626" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b626" END="PRG23_MIRROR1::RAM:b67b" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b6b2" NAME="CombatActionScript_12_AllyDefending" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b6b2" END="PRG23_MIRROR1::RAM:b6ba" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b6bb" NAME="CombatActionScript_17_AllyDefending" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b6bb" END="PRG23_MIRROR1::RAM:b6c3" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b6fa" NAME="CombatActionScript_12_AllyDefending_2" LIBRARY_FUNCTION="n">
@@ -14848,16 +15295,53 @@ BaseDamage = [(offense * 3) - defense] / 4</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b75a" END="PRG23_MIRROR1::RAM:b803" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b804" NAME="CombatActionScript_4x" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b804" END="PRG23_MIRROR1::RAM:b80a" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b862" NAME="FUN_PRG23_MIRROR1__b862" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b862" END="PRG23_MIRROR1::RAM:b867" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b868" NAME="CombatActionScript_40_00_Heal" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b868" END="PRG23_MIRROR1::RAM:b878" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b8d4" NAME="FUN_PRG23_MIRROR1__b8d4" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b8d4" END="PRG23_MIRROR1::RAM:b8f1" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b915" NAME="CombatActionScript_40_06_FightDamageFinalCalc" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:b915" NAME="CombatActionScript_40_06_DamageFinalCalc" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:b915" END="PRG23_MIRROR1::RAM:ba06" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bd5b" NAME="FUN_PRG23_MIRROR1__bd5b" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:ba2a" NAME="CombatActionScript_40_09_PKFireOmega" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:ba2a" END="PRG23_MIRROR1::RAM:ba3b" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:ba3c" NAME="CombatActionScript_40_0A_PKFreezeGamma" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:ba3c" END="PRG23_MIRROR1::RAM:ba6d" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bae4" NAME="CombatActionScript_40_12_Dark" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bae4" END="PRG23_MIRROR1::RAM:baf9" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bd5b" NAME="Display_Healing_Results" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bd5b" END="PRG23_MIRROR1::RAM:bd68" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bd7f" NAME="FUN_PRG23_MIRROR1__bd7f" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bd7f" END="PRG23_MIRROR1::RAM:bd94" />
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bdbe" END="PRG23_MIRROR1::RAM:bdcb" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bdcc" NAME="FUN_PRG23_MIRROR1__bdcc" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bdcc" END="PRG23_MIRROR1::RAM:bdd7" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bdd8" NAME="FUN_PRG23_MIRROR1__bdd8" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bdd8" END="PRG23_MIRROR1::RAM:bddc" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bddd" NAME="Combat_Call_Calc_Final_Damage" LIBRARY_FUNCTION="n">
@@ -14868,7 +15352,7 @@ BaseDamage = [(offense * 3) - defense] / 4</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bde8" END="PRG23_MIRROR1::RAM:bdea" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bdeb" NAME="FUN_PRG23_MIRROR1__bdeb" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bdeb" NAME="Do_Healing_2" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bdeb" END="PRG23_MIRROR1::RAM:be3a" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
@@ -14876,7 +15360,7 @@ BaseDamage = [(offense * 3) - defense] / 4</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:be3b" END="PRG23_MIRROR1::RAM:be71" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bef2" NAME="FUN_PRG23_MIRROR1__bef2" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bef2" NAME="Do_Healing" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bef2" END="PRG23_MIRROR1::RAM:beff" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
@@ -14884,12 +15368,20 @@ BaseDamage = [(offense * 3) - defense] / 4</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bf00" END="PRG23_MIRROR1::RAM:bf14" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bf2c" NAME="FUN_PRG23_MIRROR1__bf2c" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bf2c" NAME="Get_Byte_Y_From_Enemy_X" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bf2c" END="PRG23_MIRROR1::RAM:bf57" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bf58" NAME="FUN_PRG23_MIRROR1__bf58" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bf58" END="PRG23_MIRROR1::RAM:bf65" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bf74" NAME="FUN_PRG23_MIRROR1__bf74" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bf74" END="PRG23_MIRROR1::RAM:bf8b" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bf8c" NAME="FUN_PRG23_MIRROR1__bf8c" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bf8c" END="PRG23_MIRROR1::RAM:bfa9" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bfaa" NAME="FUN_PRG23_MIRROR1__bfaa" LIBRARY_FUNCTION="n">
@@ -14900,11 +15392,11 @@ BaseDamage = [(offense * 3) - defense] / 4</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bfd8" END="PRG23_MIRROR1::RAM:bfe1" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bfe2" NAME="FUN_PRG23_MIRROR1__bfe2" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bfe2" NAME="SEC_If_Defender_Boss" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bfe2" END="PRG23_MIRROR1::RAM:bfee" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bfef" NAME="FUN_PRG23_MIRROR1__bfef" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG23_MIRROR1::RAM:bfef" NAME="CLC_If_Defender_Enemy_or_NormalAlly" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG23_MIRROR1::RAM:bfef" END="PRG23_MIRROR1::RAM:bffd" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>

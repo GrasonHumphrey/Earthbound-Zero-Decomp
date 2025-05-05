@@ -64,6 +64,12 @@
 </ul>
 </li>
 <li class="toclevel-1 tocsection-18"><a href="#Scripts"><span class="tocnumber">4</span> <span class="toctext">Scripts</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#Examples"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-20"><a href="#Man_with_blue_mustache_in_N._Podunk"><span class="tocnumber">5.1</span> <span class="toctext">Man with blue mustache in N. Podunk</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Podunk_burger_shop_NPC"><span class="tocnumber">5.2</span> <span class="toctext">Podunk burger shop NPC</span></a></li>
+</ul>
+</li>
 </ul>
 </div>
 
@@ -108,9 +114,9 @@
 </p>
 <h3><span class="mw-headline" id="Interactable_NPC">Interactable NPC</span></h3>
 <p>These are NPCs that can be interacted with:
-</p><p>Stationary: 0x10, 0x50, 0x90, 0xD0
-</p><p>Walking: 0x11, 0x51, 0x91, 0xD1
-</p><p>Spinning/walking in place: 0x13, 0x53, 0x93, 0xD3
+</p><p>Stationary: 0x10
+</p><p>Walking: 0x11
+</p><p>Spinning/walking in place: 0x13
 </p>
 <ul><li>Bytes 4-5: Sprite</li>
 <li>Bytes 6-7: Script to jump to end of script unless talking</li>
@@ -256,6 +262,64 @@
 68                 land mine
 69                 horiz. shake (EVE?)
 6A                 XX crystal
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<h3><span class="mw-headline" id="Man_with_blue_mustache_in_N._Podunk">Man with blue mustache in N. Podunk</span></h3>
+<p>Data starts at PRG16$84BC
+</p>
+<pre># Object header
+51 35     # ID = 0x11 (walking NPC). X location = 0xD5
+82 69     # Direction = 0x02 (right). Y location = 0x1A6
+A8 81     # Sprite = 0x81A8
+# Object script
+0A 12     # Jump to object byte 0x12 unless TALKing (end of script) ----------
+12 0B 0F  # Jump to object byte 0x0F unless flag 0x0B set (zoo finished) -    |
+08 25 00  # Display NPC's thankful text (text pointer 0x0025)             |   |
+00        # End script                                                    |   |
+08 31 00  # Display NPC's warning text (text pointer 0x0031) &lt;------------    |
+00        # End script &lt;------------------------------------------------------
+</pre>
+<h3><span class="mw-headline" id="Podunk_burger_shop_NPC">Podunk burger shop NPC</span></h3>
+<p>Data starts at PRG16$8989
+</p>
+<pre># Object header
+91 01       # ID = 0x11 (walking NPC). X location = 0x6
+04 55       # Direction = 0x04 (down). Y location = 0x154
+68 84       # Sprite = 0x8468
+# Object script
+02 89 89 0B # Call subroutine at byte 0x0B with object pointer 0x8989 (address of this object) --
+00          # End script                                                                         |
+0A 4B       # Jump to byte 0x4B (end script) unless TALKing &lt;------------------------------------
+08 B1 02    # Display shop welcome text (text ptr 0x2B1)
+10 00       # Set flag 00 (shopping)
+27 00 17    # Jump to byte 0x17 unless item 00 in any character's inventory --------
+11 00       # Clear flag 00 (shopping)                                              |
+22 3C 3D 3F 00 42 # Choose item from list of items 3C, 3D, and 3F (Orange juice, &lt;--
+                  # French fries, hamburger), jump to byte 0x42 if B pressed -----
+12 00 26    # Jump to byte 0x26 unless flag 00 (shopping) set --                  |
+08 3C 03    # Display inventory full text (text ptr 0x33C)     |                  |
+11 00       # Clear flag 00 (shopping)                         |                  |
+03          # Return from subroutine (ends shopping)           |                  |
+29 48       # Take money, jump to byte 0x48 if not enough &lt;----- --&gt;------------------
+08 3A 02    # Display confirmation text (text ptr 0x23A)                          |   |
+09 40       # Ask yes/no, jump to byte 0x40 if no selected --------------------   |   |
+08 B2 02    # Display shop thanks text (text ptr 0x2B2)                        |  |   |
+5C 0B       # Play cash register sound (0x0B)                                  |  |   |
+1F          # Show money                                                       |  |   |
+2D 4B       # Add item to inventory, jump to byte 0x4B (end script) if full    |  |   |
+08 E3 03    # Display "anything else?" text (text ptr 0x3E3)                   |  |   |
+09 3C       # Display yes/no, jump to byte 0x3C if no -----------              |  |   |
+01 10       # Jump to byte 0x10 (restart shopping)               |             |  |   |
+08 09 03    # Display shopping finished text (text ptr 0x309) &lt;--              |  |   |
+03          # Return from subroutine (ends shopping)                           |  |   |
+28 4B       # Give money back, jump to byte 0x4B (end script) if full &lt;--------   |   |
+08 08 03    # Display "don't need that" text (text ptr 0x308) &lt;-------------------    |
+11 00       # Clear flag 00 (shopping)                                                |
+03          # Return from subroutine (ends shopping)                                  |
+08 3B 03    # Display not enough money text (text ptr 0x33B) &lt;------------------------
+03          # Return from subroutine (ends shopping)
 </pre>
 <!-- 
 NewPP limit report
