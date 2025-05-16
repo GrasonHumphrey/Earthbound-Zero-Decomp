@@ -24,6 +24,9 @@ powershell.exe -executionpolicy --command "(Invoke-WebRequest -URI https://datac
 powershell.exe -executionpolicy --command "(Invoke-WebRequest -URI https://datacrystal.tcrf.net/wiki/EarthBound_Beginnings/Anti-Piracy).Content | Set-Content -Path .\Wiki\Anti-Piracy.html"
 powershell.exe -executionpolicy --command "(Invoke-WebRequest -URI https://datacrystal.tcrf.net/wiki/EarthBound_Beginnings/Music_table).Content | Set-Content -Path .\Wiki\Music_table.html"
 
+powershell.exe -executionpolicy --command "(Invoke-WebRequest -URI https://datacrystal.tcrf.net/wiki/EarthBound_Beginnings/Cheats).Content | Set-Content -Path .\Wiki\Cheats.html"
+powershell.exe -executionpolicy --command "(Invoke-WebRequest -URI https://datacrystal.tcrf.net/wiki/EarthBound_Beginnings/Object_state_data).Content | Set-Content -Path .\Wiki\Object_state_data.html"
+
 set "tempfile=%cd%\Wiki\tempfile.html"
 
 for /r %%i in (Wiki\*) do (

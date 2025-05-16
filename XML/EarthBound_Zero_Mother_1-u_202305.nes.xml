@@ -322,7 +322,7 @@
 
 ]>
 <PROGRAM NAME="EarthBound_Zero_Mother_1-u_202305.nes" EXE_PATH="/C:/Users/ghumphrey/Documents/Projects/Ghidra Projects/ROMs/earth-bound-zero-mother-1-u_202305/EarthBound_Zero_Mother_1-u_202305.nes" EXE_FORMAT="NES ROM" IMAGE_BASE="0000">
-    <INFO_SOURCE USER="ghumphrey" TOOL="Ghidra 11.3" TIMESTAMP="Mon May 05 14:02:54 EDT 2025" />
+    <INFO_SOURCE USER="ghumphrey" TOOL="Ghidra 11.3" TIMESTAMP="Fri May 16 15:18:47 EDT 2025" />
     <PROCESSOR NAME="6502" LANGUAGE_PROVIDER="6502:LE:16:default:default" ENDIAN="little" />
     <DATATYPES>
         <STRUCTURE NAME="AllyData" NAMESPACE="/" SIZE="0x8">
@@ -936,6 +936,7 @@
         <CODE_BLOCK START="c9d7" END="c9d7" />
         <CODE_BLOCK START="caa2" END="caa2" />
         <CODE_BLOCK START="cb44" END="cb44" />
+        <CODE_BLOCK START="cdaf" END="cdb0" />
         <CODE_BLOCK START="ce02" END="ce04" />
         <CODE_BLOCK START="ce08" END="ce10" />
         <CODE_BLOCK START="ced3" END="ced4" />
@@ -948,11 +949,10 @@
         <CODE_BLOCK START="dd57" END="dd57" />
         <CODE_BLOCK START="dd64" END="dd64" />
         <CODE_BLOCK START="de6c" END="de6c" />
-        <CODE_BLOCK START="e001" END="e001" />
-        <CODE_BLOCK START="e065" END="e104" />
-        <CODE_BLOCK START="e1be" END="e375" />
-        <CODE_BLOCK START="e646" END="e660" />
-        <CODE_BLOCK START="e772" END="e787" />
+        <CODE_BLOCK START="e000" END="e104" />
+        <CODE_BLOCK START="e1aa" END="e3cb" />
+        <CODE_BLOCK START="e3de" END="e8dd" />
+        <CODE_BLOCK START="e8e1" END="ebdc" />
         <CODE_BLOCK START="ec65" END="eceb" />
         <CODE_BLOCK START="ecfc" END="ed21" />
         <CODE_BLOCK START="eddc" END="ee20" />
@@ -1071,11 +1071,15 @@
     </CODE>
     <DATA>
         <DEFINED_DATA ADDRESS="0001" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="0002" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0007" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0008" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0009" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="000a" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="000b" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="000c" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="000d" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="000f" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0010" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0012" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0013" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
@@ -1149,8 +1153,7 @@
         <DEFINED_DATA ADDRESS="0065" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0066" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0067" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
-        <DEFINED_DATA ADDRESS="0068" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
-        <DEFINED_DATA ADDRESS="0069" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="0068" DATATYPE="undefined2" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="006a" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="006b" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="006c" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
@@ -1195,7 +1198,7 @@
         <DEFINED_DATA ADDRESS="00a1" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="00a2" DATATYPE="undefined2" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="00a4" DATATYPE="undefined2" DATATYPE_NAMESPACE="/" SIZE="0x2" />
-        <DEFINED_DATA ADDRESS="00a6" DATATYPE="undefined2" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="00a6" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="00aa" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="00ab" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="00ac" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
@@ -1256,6 +1259,7 @@
         <DEFINED_DATA ADDRESS="0211" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0212" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="0213" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="02fb" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="02fc" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="02fd" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="02fe" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
@@ -2148,6 +2152,99 @@
         <DEFINED_DATA ADDRESS="9ff0" DATATYPE="ItemData" DATATYPE_NAMESPACE="/" SIZE="0x8" />
         <DEFINED_DATA ADDRESS="9ff8" DATATYPE="ItemData" DATATYPE_NAMESPACE="/" SIZE="0x8" />
         <DEFINED_DATA ADDRESS="c600" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="e105" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e107" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e109" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e10b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e10d" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e10f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e111" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e113" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e115" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e117" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e119" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e11b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e11d" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e11f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e121" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e123" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e125" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e127" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e129" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e12b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e12d" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e12f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e131" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e133" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e135" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e137" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e139" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e13b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e13d" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e13f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e141" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e143" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e145" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e147" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e149" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e14b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e14d" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e14f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e151" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e153" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e155" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e157" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e159" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e15b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e15d" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e15f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e161" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e163" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e165" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e167" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e169" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e16b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e16d" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e16f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e171" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e173" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e175" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e177" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e179" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e17b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e17d" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e17f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e181" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e183" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e185" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e187" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e189" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e18b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e18d" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e18f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e191" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e193" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e195" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e197" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e199" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e19b" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e19d" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e19f" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e1a1" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e1a3" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e1a5" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e1a7" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e3cc" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e3ce" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e3d0" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e3d2" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e3d4" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e3d6" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e3d8" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e3da" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="e3dc" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="ebf8" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
+        <DEFINED_DATA ADDRESS="ebf9" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="ec5d" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="ec5e" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
         <DEFINED_DATA ADDRESS="ecfa" DATATYPE="undefined1" DATATYPE_NAMESPACE="/" SIZE="0x1" />
@@ -4727,6 +4824,15 @@
         <DEFINED_DATA ADDRESS="PRG22_MIRROR1::RAM:b5ec" DATATYPE="EnemyGroup" DATATYPE_NAMESPACE="/" SIZE="0xa" />
         <DEFINED_DATA ADDRESS="PRG22_MIRROR1::RAM:b5f6" DATATYPE="EnemyGroup" DATATYPE_NAMESPACE="/" SIZE="0xa" />
         <DEFINED_DATA ADDRESS="PRG22_MIRROR1::RAM:b600" DATATYPE="EnemyGroup" DATATYPE_NAMESPACE="/" SIZE="0xa" />
+        <DEFINED_DATA ADDRESS="PRG23_MIRROR1::RAM:a7ef" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG23_MIRROR1::RAM:a7f1" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG23_MIRROR1::RAM:a7f3" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG23_MIRROR1::RAM:a7f5" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG23_MIRROR1::RAM:a7f7" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG23_MIRROR1::RAM:a7f9" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG23_MIRROR1::RAM:a7fb" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG23_MIRROR1::RAM:a7fd" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
+        <DEFINED_DATA ADDRESS="PRG23_MIRROR1::RAM:a7ff" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG23_MIRROR1::RAM:ada7" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG23_MIRROR1::RAM:ada9" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
         <DEFINED_DATA ADDRESS="PRG23_MIRROR1::RAM:adab" DATATYPE="pointer" DATATYPE_NAMESPACE="/" SIZE="0x2" />
@@ -7835,6 +7941,40 @@ Format: TRAIN_[DEST]_[SOURCE]</COMMENT>
         <COMMENT ADDRESS="9e00" TYPE="plate">PSI data</COMMENT>
         <COMMENT ADDRESS="9fb8" TYPE="end-of-line">Pointer within bank</COMMENT>
         <COMMENT ADDRESS="9fb8" TYPE="plate">Unused items/data?</COMMENT>
+        <COMMENT ADDRESS="e104" TYPE="pre">Return to the pointer index 2x object type</COMMENT>
+        <COMMENT ADDRESS="e275" TYPE="plate">Check for collision between two solid objects
+Return 0 if no collision
+? Return offset of collided object if collision?</COMMENT>
+        <COMMENT ADDRESS="e3b4" TYPE="pre">Set $8000 to bank 20</COMMENT>
+        <COMMENT ADDRESS="e3b4" TYPE="plate">Set carry if object attempts to move
+into solid terrain</COMMENT>
+        <COMMENT ADDRESS="e3cb" TYPE="pre">Return to pointer at index of
+direction attempting to move</COMMENT>
+        <COMMENT ADDRESS="e56a" TYPE="pre">Set object horiz speed</COMMENT>
+        <COMMENT ADDRESS="e572" TYPE="pre">Set object vert speed</COMMENT>
+        <COMMENT ADDRESS="e590" TYPE="pre">Get sprite offset for
+direction facing</COMMENT>
+        <COMMENT ADDRESS="e59b" TYPE="plate">Adds the offset in A to object base sprite
+and stores in object current sprite</COMMENT>
+        <COMMENT ADDRESS="e59c" TYPE="pre">Add offset in A to base sprite low byte</COMMENT>
+        <COMMENT ADDRESS="e5a0" TYPE="pre">Store it in current sprite</COMMENT>
+        <COMMENT ADDRESS="e5a4" TYPE="pre">Store base sprite high byte
+in current sprite</COMMENT>
+        <COMMENT ADDRESS="e7cd" TYPE="pre">Get a random number 0-0x3E
+Higher value = lower chance of NPC moving</COMMENT>
+        <COMMENT ADDRESS="e7d4" TYPE="pre">Branch if &gt;= 8
+to set NPC to not moving</COMMENT>
+        <COMMENT ADDRESS="e7d8" TYPE="pre">Otherwise update the direction
+NPC is facing with the random value
+between 0-7</COMMENT>
+        <COMMENT ADDRESS="e7dc" TYPE="plate">Checks for collision with where the object
+is attempting to move, and only moves
+the object if it is able to</COMMENT>
+        <COMMENT ADDRESS="e7e1" TYPE="pre">See if anything is blocking movement
+before applying movement to object</COMMENT>
+        <COMMENT ADDRESS="e7f3" TYPE="pre">Jump to move object if all collision checks pass</COMMENT>
+        <COMMENT ADDRESS="e987" TYPE="pre">Check if Ninten can move in the desired direction</COMMENT>
+        <COMMENT ADDRESS="e9b5" TYPE="pre">Update direction moving</COMMENT>
         <COMMENT ADDRESS="ede1" TYPE="pre">Do this 5 times, not sure why</COMMENT>
         <COMMENT ADDRESS="ede3" TYPE="pre">Modify values from [0500:051F]</COMMENT>
         <COMMENT ADDRESS="ee79" TYPE="pre">Fade-in started here</COMMENT>
@@ -8477,21 +8617,26 @@ Happens every time on overworld standing still</COMMENT>
         <COMMENT ADDRESS="PRG30_FIXED1_MIRROR::RAM:cee5" TYPE="pre">Set 8000 to Bank 20</COMMENT>
         <COMMENT ADDRESS="PRG30_FIXED1_MIRROR::RAM:cef0" TYPE="pre">Loop through setting all CHR ROM banks</COMMENT>
         <COMMENT ADDRESS="PRG30_FIXED1_MIRROR::RAM:cf03" TYPE="pre">Set bank 8000 to 20</COMMENT>
+        <COMMENT ADDRESS="PRG30_FIXED1_MIRROR::RAM:d060" TYPE="pre">Return if not moving</COMMENT>
         <COMMENT ADDRESS="PRG30_FIXED1_MIRROR::RAM:d4be" TYPE="pre">Set bank 8000 to 1</COMMENT>
         <COMMENT ADDRESS="PRG30_FIXED1_MIRROR::RAM:d4c8" TYPE="pre">Set bank A000 to 1</COMMENT>
+        <COMMENT ADDRESS="PRG30_FIXED1_MIRROR::RAM:dd97" TYPE="pre">Populate object state data in RAM
+with object data from ROM</COMMENT>
+        <COMMENT ADDRESS="PRG30_FIXED1_MIRROR::RAM:dee1" TYPE="pre">Get type of current object</COMMENT>
+        <COMMENT ADDRESS="PRG30_FIXED1_MIRROR::RAM:dee7" TYPE="pre">Don&apos;t move object if offscreen</COMMENT>
     </COMMENTS>
     <PROPERTIES>
         <PROPERTY NAME="Program Information.Analysis Times.Times" TYPE="custom" VALUE="&amp;lt;SAVE_STATE&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Basic Constant Reference Analyzer&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;1227&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Basic Constant Reference Analyzer&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;1385&amp;quot; /&amp;gt;
     &amp;lt;STATE NAME=&amp;quot;CUSTOM_OPTION_CLASS&amp;quot; TYPE=&amp;quot;string&amp;quot; VALUE=&amp;quot;ghidra.app.plugin.core.analysis.StoredAnalyzerTimes&amp;quot; /&amp;gt;
     &amp;lt;STATE NAME=&amp;quot;Call Convention ID&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;11&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Call-Fixup Installer&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;65&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Create Function&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;254&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Call-Fixup Installer&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;74&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Create Function&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;286&amp;quot; /&amp;gt;
     &amp;lt;STATE NAME=&amp;quot;Decompiler Switch Analysis&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;2287&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Non-Returning Functions - Discovered&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;125&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Shared Return Calls&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;204&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Stack&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;577&amp;quot; /&amp;gt;
-    &amp;lt;STATE NAME=&amp;quot;Subroutine References&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;62&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Non-Returning Functions - Discovered&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;134&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Shared Return Calls&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;232&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Stack&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;711&amp;quot; /&amp;gt;
+    &amp;lt;STATE NAME=&amp;quot;Subroutine References&amp;quot; TYPE=&amp;quot;long&amp;quot; VALUE=&amp;quot;88&amp;quot; /&amp;gt;
 &amp;lt;/SAVE_STATE&amp;gt;" />
         <PROPERTY NAME="Program Information.Analyzed" TYPE="bool" VALUE="y" />
         <PROPERTY NAME="Program Information.Created With Ghidra Version" TYPE="string" VALUE="11.3" />
@@ -8535,6 +8680,7 @@ Happens every time on overworld standing still</COMMENT>
         <BOOKMARK ADDRESS="c70b" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at c70b (flow from c709)" />
         <BOOKMARK ADDRESS="c7af" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at c7af (flow from PRG19_MIRROR1::ad4e)" />
         <BOOKMARK ADDRESS="c7c7" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at c7c7 (flow from c7c4)" />
+        <BOOKMARK ADDRESS="cdb1" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at cdb1 (flow from cdaf)" />
         <BOOKMARK ADDRESS="ce11" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at ce11 (flow from ce0f)" />
         <BOOKMARK ADDRESS="ced5" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at ced5 (flow from ced3)" />
         <BOOKMARK ADDRESS="ceda" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at ceda (flow from f202)" />
@@ -8542,9 +8688,12 @@ Happens every time on overworld standing still</COMMENT>
         <BOOKMARK ADDRESS="ceea" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at ceea (flow from cee8)" />
         <BOOKMARK ADDRESS="ceed" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at ceed (flow from ceeb)" />
         <BOOKMARK ADDRESS="cf05" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at cf05 (flow from cf03)" />
+        <BOOKMARK ADDRESS="d55d" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at d55d (flow from e5ec)" />
         <BOOKMARK ADDRESS="d977" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at d977 (flow from ecb7)" />
+        <BOOKMARK ADDRESS="d9fa" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at d9fa (flow from eab3)" />
         <BOOKMARK ADDRESS="da4a" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at da4a (flow from da48)" />
         <BOOKMARK ADDRESS="dccd" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at dccd (flow from PRG19_MIRROR1::a0b7)" />
+        <BOOKMARK ADDRESS="de13" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at de13 (flow from e838)" />
         <BOOKMARK ADDRESS="de8b" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Unable to resolve constructor at de8b (flow from PRG19_MIRROR1::bc01)" />
         <BOOKMARK ADDRESS="ecff" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Failed to disassemble at ecff due to conflicting instruction (flow from ecff)" />
         <BOOKMARK ADDRESS="f8b4" TYPE="Error" CATEGORY="Bad Instruction" DESCRIPTION="Disassembly not permitted within uninitialized memory block (flow from f8b4)" />
@@ -10782,11 +10931,21 @@ Happens every time on overworld standing still</COMMENT>
     </PROGRAM_ENTRY_POINTS>
     <RELOCATION_TABLE />
     <SYMBOL_TABLE>
+        <SYMBOL ADDRESS="000c" NAME="DirectionFacing" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0015" NAME="CurrentArea" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="0018" NAME="XPos1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="0019" NAME="XPos2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="001a" NAME="YPos1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="001b" NAME="YPos2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0026" NAME="UNK_Rand1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0027" NAME="UNK_Rand2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0030" NAME="ObjectInfoPtr" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0032" NAME="ObjectPtr" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="003a" NAME="CurrentObjNewPosX1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="003b" NAME="CurrentObjNewPosX2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="003c" NAME="CurrentObjNewPosY1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="003d" NAME="CurrentObjNewPosY2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="003e" NAME="CurrentObjectMoveDir" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0048" NAME="PlayerCombatState" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="005c" NAME="SpriteDataLoc" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="0073" NAME="DisplayText_Addr_Lower" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
@@ -11379,7 +11538,35 @@ Happens every time on overworld standing still</COMMENT>
         <SYMBOL ADDRESS="c001" NAME="IRQ_RELOAD" NAMESPACE="" TYPE="global" SOURCE_TYPE="IMPORTED" PRIMARY="y" />
         <SYMBOL ADDRESS="e000" NAME="IRQ_DISABLE" NAMESPACE="" TYPE="global" SOURCE_TYPE="IMPORTED" PRIMARY="y" />
         <SYMBOL ADDRESS="e001" NAME="IRQ_ENABLE" NAMESPACE="" TYPE="global" SOURCE_TYPE="IMPORTED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e0f9" NAME="Control_Object_Movement_And_Sprites" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e275" NAME="Check_Obj_Obj_Collision" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e3b4" NAME="Check_Obj_Terrain_Collision" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e3cc" NAME="TerrainCollisionPtr1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e3cd" NAME="TerrainCollisionPtr2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e552" NAME="Move_Obj_2xSpeed_And_Set_Sprite" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e567" NAME="Move_Obj_And_Set_Sprite" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e59b" NAME="Update_CurrentSprite_For_DirectionFacing" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e5bd" NAME="Calc_CurrentObj_NewPos" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e5ef" NAME="Get_CurrentObjSpeed_Offset" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e607" NAME="Get_CurrentObjectMoveDir_Offset" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="e655" NAME="Set_ObjectInteractingPtr" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e7cc" NAME="Move_Obj_11_MoveNPCRandom" NAMESPACE="FUN_e7b8::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e7dc" NAME="Attempt_Move_Obj" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e7f5" NAME="Set_Obj_Still" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e7f9" NAME="Move_Obj_And_Sprite" NAMESPACE="Set_Obj_Still::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e7fc" NAME="GetRandomA_If_0025_NonZero_UNK" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e94c" NAME="Set_Moving_Still" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e96b" NAME="Update_Ninten_Pos_And_Sprite" NAMESPACE="Set_Moving_Still::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e96c" NAME="Update_Ninten_Pos_And_Sprite" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e9a9" NAME="Set_Ninten_Still" NAMESPACE="Update_Ninten_Pos_And_Sprite::" TYPE="local" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e9cd" NAME="Get_Move_Direction_From_Input" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="e9fa" NAME="Check_Ninten_Obj_Collision" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="ebdd" NAME="MovementDirections" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="ebed" NAME="MoveOffsetsX1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="ebee" NAME="MoveOffsetsX2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="ebef" NAME="MoveOffsetsY1" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="ebf0" NAME="CurrentObjMoveY2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="ebf1" NAME="DirectionFacingSpriteOffset" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="ecfc" NAME="Combat_MoveStatusBarDown" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="ecff" NAME="Combat_MoveStatusBarUp" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="eddc" NAME="Init_RAM_0500_053F" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
@@ -13585,7 +13772,15 @@ Happens every time on overworld standing still</COMMENT>
         <SYMBOL ADDRESS="PRG30_FIXED1_MIRROR::RAM:cee8" NAME="Init_CHR_ROM_Banks" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG30_FIXED1_MIRROR::RAM:cefc" NAME="Load_Room_2" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG30_FIXED1_MIRROR::RAM:cfac" NAME="Load_Room_3" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG30_FIXED1_MIRROR::RAM:d05e" NAME="Update_Ninten_Position" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG30_FIXED1_MIRROR::RAM:d0c4" NAME="Scroll_Screen_2_UNK" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG30_FIXED1_MIRROR::RAM:d232" NAME="Scroll_Screen_3_UNK" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG30_FIXED1_MIRROR::RAM:dd64" NAME="Increment_ObjectInfoPtr" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG30_FIXED1_MIRROR::RAM:dd72" NAME="Load_New_Screen_Objects" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG30_FIXED1_MIRROR::RAM:dd88" NAME="Load_Objects" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
         <SYMBOL ADDRESS="PRG30_FIXED1_MIRROR::RAM:de6c" NAME="Set_ROM_Bank_For_Talk" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG30_FIXED1_MIRROR::RAM:de99" NAME="Control_Screen_And_Objects_UNK" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
+        <SYMBOL ADDRESS="PRG30_FIXED1_MIRROR::RAM:def9" NAME="Update_Ninten_ObjData" NAMESPACE="" TYPE="global" SOURCE_TYPE="USER_DEFINED" PRIMARY="y" />
     </SYMBOL_TABLE>
     <FUNCTIONS>
         <FUNCTION ENTRY_POINT="00d7" NAME="FUN_00d7" LIBRARY_FUNCTION="n">
@@ -13769,6 +13964,10 @@ Happens every time on overworld standing still</COMMENT>
             <ADDRESS_RANGE START="cb44" END="cb44" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
+        <FUNCTION ENTRY_POINT="cdaf" NAME="FUN_cdaf" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="cdaf" END="cdb0" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
         <FUNCTION ENTRY_POINT="ce02" NAME="FUN_ce02" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="ce02" END="ce04" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
@@ -13807,6 +14006,10 @@ Happens every time on overworld standing still</COMMENT>
             <ADDRESS_RANGE START="d9f1" END="d9f3" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
+        <FUNCTION ENTRY_POINT="d9fa" NAME="FUN_d9fa" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="d9fa" END="d9fa" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
         <FUNCTION ENTRY_POINT="da48" NAME="FUN_da48" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="da48" END="da49" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
@@ -13819,8 +14022,20 @@ Happens every time on overworld standing still</COMMENT>
             <ADDRESS_RANGE START="dd57" END="dd57" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="dd64" NAME="FUN_dd64" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="dd64" NAME="irq" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="dd64" END="dd64" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="de13" NAME="FUN_de13" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="de13" END="de13" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="de6c" NAME="irq" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="de6c" END="de6c" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e000" NAME="IRQ_DISABLE" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e000" END="e064" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="e065" NAME="FUN_e065" LIBRARY_FUNCTION="n">
@@ -13835,12 +14050,20 @@ Happens every time on overworld standing still</COMMENT>
             <ADDRESS_RANGE START="e0f2" END="e0f8" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="e0f9" NAME="FUN_e0f9" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="e0f9" NAME="Control_Object_Movement_And_Sprites" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="e0f9" END="e104" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
+        <FUNCTION ENTRY_POINT="e1aa" NAME="FUN_e1aa" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e1aa" END="e1bd" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
         <FUNCTION ENTRY_POINT="e1be" NAME="FUN_e1be" LIBRARY_FUNCTION="n">
-            <ADDRESS_RANGE START="e1be" END="e20e" />
+            <ADDRESS_RANGE START="e1be" END="e1d3" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e1d4" NAME="FUN_e1d4" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e1d4" END="e20e" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="e20f" NAME="FUN_e20f" LIBRARY_FUNCTION="n">
@@ -13851,8 +14074,11 @@ Happens every time on overworld standing still</COMMENT>
             <ADDRESS_RANGE START="e266" END="e274" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="e275" NAME="FUN_e275" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="e275" NAME="Check_Obj_Obj_Collision" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="e275" END="e285" />
+            <REGULAR_CMT>Check for collision between two solid objects
+Return 0 if no collision
+? Return offset of collided object if collision?</REGULAR_CMT>
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="e286" NAME="FUN_e286" LIBRARY_FUNCTION="n">
@@ -13867,6 +14093,86 @@ Happens every time on overworld standing still</COMMENT>
             <ADDRESS_RANGE START="e2c2" END="e375" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
+        <FUNCTION ENTRY_POINT="e376" NAME="FUN_e376" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e376" END="e3b3" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e3b4" NAME="Check_Obj_Terrain_Collision" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e3b4" END="e3cb" />
+            <REGULAR_CMT>Set carry if object attempts to move
+into solid terrain</REGULAR_CMT>
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e3de" NAME="FUN_e3de" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e3de" END="e402" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e403" NAME="FUN_e403" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e403" END="e427" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e428" NAME="FUN_e428" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e428" END="e48f" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e490" NAME="FUN_e490" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e490" END="e496" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e497" NAME="FUN_e497" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e497" END="e49d" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e49e" NAME="FUN_e49e" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e49e" END="e505" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e506" NAME="FUN_e506" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e506" END="e50f" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e510" NAME="FUN_e510" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e510" END="e551" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e552" NAME="Move_Obj_2xSpeed_And_Set_Sprite" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e552" END="e566" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e567" NAME="Move_Obj_And_Set_Sprite" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e567" END="e59a" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e59b" NAME="Update_CurrentSprite_For_DirectionFacing" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e59b" END="e5ae" />
+            <REGULAR_CMT>Adds the offset in A to object base sprite
+and stores in object current sprite</REGULAR_CMT>
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e5af" NAME="FUN_e5af" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e5af" END="e5bc" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e5bd" NAME="Calc_CurrentObj_NewPos" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e5bd" END="e5ee" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e5ef" NAME="Get_CurrentObjSpeed_Offset" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e5ef" END="e606" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e607" NAME="Get_CurrentObjectMoveDir_Offset" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e607" END="e60d" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e60e" NAME="FUN_e60e" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e60e" END="e640" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e641" NAME="FUN_e641" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e641" END="e645" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
         <FUNCTION ENTRY_POINT="e646" NAME="FUN_e646" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="e646" END="e654" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
@@ -13875,8 +14181,160 @@ Happens every time on overworld standing still</COMMENT>
             <ADDRESS_RANGE START="e655" END="e660" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
+        <FUNCTION ENTRY_POINT="e661" NAME="FUN_e661" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e661" END="e677" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e678" NAME="FUN_e678" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e678" END="e680" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e681" NAME="FUN_e681" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e681" END="e6a0" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e6a1" NAME="FUN_e6a1" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e6a1" END="e6ce" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e6cf" NAME="FUN_e6cf" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e6cf" END="e6d8" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e6d9" NAME="FUN_e6d9" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e6d9" END="e6f0" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e6f1" NAME="FUN_e6f1" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e6f1" END="e719" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e71a" NAME="FUN_e71a" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e71a" END="e71f" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e720" NAME="FUN_e720" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e720" END="e72d" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e72e" NAME="FUN_e72e" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e72e" END="e732" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e733" NAME="FUN_e733" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e733" END="e73c" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e73d" NAME="FUN_e73d" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e73d" END="e745" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e746" NAME="FUN_e746" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e746" END="e74c" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e74d" NAME="FUN_e74d" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e74d" END="e755" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e756" NAME="FUN_e756" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e756" END="e771" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
         <FUNCTION ENTRY_POINT="e772" NAME="FUN_e772" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="e772" END="e787" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e788" NAME="FUN_e788" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e788" END="e7b7" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e7b8" NAME="FUN_e7b8" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e7b8" END="e7db" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e7dc" NAME="Attempt_Move_Obj" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e7dc" END="e7f4" />
+            <REGULAR_CMT>Checks for collision with where the object
+is attempting to move, and only moves
+the object if it is able to</REGULAR_CMT>
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e7f5" NAME="Set_Obj_Still" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e7f5" END="e7fb" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e7fc" NAME="GetRandomA_If_0025_NonZero_UNK" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e7fc" END="e807" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e808" NAME="FUN_e808" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e808" END="e80d" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e80e" NAME="FUN_e80e" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e80e" END="e82a" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e82b" NAME="FUN_e82b" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e82b" END="e83e" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e83f" NAME="FUN_e83f" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e83f" END="e8d1" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e8d2" NAME="FUN_e8d2" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e8d2" END="e8dd" />
+            <ADDRESS_RANGE START="e8e1" END="e904" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e905" NAME="FUN_e905" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e905" END="e94b" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e94c" NAME="Set_Moving_Still" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e94c" END="e96b" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e96c" NAME="Update_Ninten_Pos_And_Sprite" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e96c" END="e9cc" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e9cd" NAME="Get_Move_Direction_From_Input" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e9cd" END="e9f9" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="e9fa" NAME="Check_Ninten_Obj_Collision" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="e9fa" END="ea23" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="ea24" NAME="FUN_ea24" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="ea24" END="ea37" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="ea38" NAME="FUN_ea38" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="ea38" END="eac4" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="eac5" NAME="FUN_eac5" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="eac5" END="eb0a" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="eb0b" NAME="FUN_eb0b" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="eb0b" END="eb39" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="eb3a" NAME="FUN_eb3a" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="eb3a" END="eb91" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="eb92" NAME="FUN_eb92" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="eb92" END="ebc9" />
+            <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
+        </FUNCTION>
+        <FUNCTION ENTRY_POINT="ebca" NAME="FUN_ebca" LIBRARY_FUNCTION="n">
+            <ADDRESS_RANGE START="ebca" END="ebdc" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
         <FUNCTION ENTRY_POINT="ec65" NAME="FUN_ec65" LIBRARY_FUNCTION="n">
@@ -15626,7 +16084,7 @@ BaseDamage = [(offense * 3) - defense] / 4</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG30_FIXED1_MIRROR::RAM:cfac" END="PRG30_FIXED1_MIRROR::RAM:d04e" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:d05e" NAME="FUN_PRG30_FIXED1_MIRROR__d05e" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:d05e" NAME="Update_Ninten_Position" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG30_FIXED1_MIRROR::RAM:d05e" END="PRG30_FIXED1_MIRROR::RAM:d09d" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
@@ -15638,7 +16096,7 @@ BaseDamage = [(offense * 3) - defense] / 4</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG30_FIXED1_MIRROR::RAM:d0b1" END="PRG30_FIXED1_MIRROR::RAM:d0c3" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:d0c4" NAME="FUN_PRG30_FIXED1_MIRROR__d0c4" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:d0c4" NAME="Scroll_Screen_2_UNK" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG30_FIXED1_MIRROR::RAM:d0c4" END="PRG30_FIXED1_MIRROR::RAM:d0fc" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
@@ -15650,7 +16108,7 @@ BaseDamage = [(offense * 3) - defense] / 4</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG30_FIXED1_MIRROR::RAM:d21c" END="PRG30_FIXED1_MIRROR::RAM:d231" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:d232" NAME="FUN_PRG30_FIXED1_MIRROR__d232" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:d232" NAME="Scroll_Screen_3_UNK" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG30_FIXED1_MIRROR::RAM:d232" END="PRG30_FIXED1_MIRROR::RAM:d283" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
@@ -15726,15 +16184,15 @@ BaseDamage = [(offense * 3) - defense] / 4</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG30_FIXED1_MIRROR::RAM:dd57" END="PRG30_FIXED1_MIRROR::RAM:dd63" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:dd64" NAME="FUN_PRG30_FIXED1_MIRROR__dd64" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:dd64" NAME="Increment_ObjectInfoPtr" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG30_FIXED1_MIRROR::RAM:dd64" END="PRG30_FIXED1_MIRROR::RAM:dd71" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:dd72" NAME="FUN_PRG30_FIXED1_MIRROR__dd72" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:dd72" NAME="Load_New_Screen_Objects" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG30_FIXED1_MIRROR::RAM:dd72" END="PRG30_FIXED1_MIRROR::RAM:dd87" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:dd88" NAME="FUN_PRG30_FIXED1_MIRROR__dd88" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:dd88" NAME="Load_Objects" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG30_FIXED1_MIRROR::RAM:dd88" END="PRG30_FIXED1_MIRROR::RAM:de12" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
@@ -15762,11 +16220,11 @@ BaseDamage = [(offense * 3) - defense] / 4</REGULAR_CMT>
             <ADDRESS_RANGE START="PRG30_FIXED1_MIRROR::RAM:de6c" END="PRG30_FIXED1_MIRROR::RAM:de8a" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:de99" NAME="FUN_PRG30_FIXED1_MIRROR__de99" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:de99" NAME="Control_Screen_And_Objects_UNK" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG30_FIXED1_MIRROR::RAM:de99" END="PRG30_FIXED1_MIRROR::RAM:def8" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
-        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:def9" NAME="FUN_PRG30_FIXED1_MIRROR__def9" LIBRARY_FUNCTION="n">
+        <FUNCTION ENTRY_POINT="PRG30_FIXED1_MIRROR::RAM:def9" NAME="Update_Ninten_ObjData" LIBRARY_FUNCTION="n">
             <ADDRESS_RANGE START="PRG30_FIXED1_MIRROR::RAM:def9" END="PRG30_FIXED1_MIRROR::RAM:dfbe" />
             <STACK_FRAME LOCAL_VAR_SIZE="0x2" PARAM_OFFSET="0x2" RETURN_ADDR_SIZE="0x0" />
         </FUNCTION>
@@ -15776,6 +16234,7 @@ BaseDamage = [(offense * 3) - defense] / 4</REGULAR_CMT>
         </FUNCTION>
     </FUNCTIONS>
     <MARKUP>
+        <MEMORY_REFERENCE ADDRESS="e5ec" OPERAND_INDEX="0x0" USER_DEFINED="y" TO_ADDRESS="PRG30_FIXED1_MIRROR::RAM:d55d" PRIMARY="y" />
         <MEMORY_REFERENCE ADDRESS="f0ce" OPERAND_INDEX="0x0" USER_DEFINED="y" TO_ADDRESS="PRG30_FIXED1_MIRROR::RAM:c68b" PRIMARY="y" />
         <MEMORY_REFERENCE ADDRESS="f202" OPERAND_INDEX="0x0" USER_DEFINED="y" TO_ADDRESS="PRG30_FIXED1_MIRROR::RAM:ceda" PRIMARY="y" />
         <MEMORY_REFERENCE ADDRESS="f220" OPERAND_INDEX="0x0" USER_DEFINED="y" TO_ADDRESS="PRG30_FIXED1_MIRROR::RAM:cee1" PRIMARY="y" />

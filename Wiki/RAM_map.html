@@ -75,16 +75,40 @@
 <td>Part of an instruction for "copy protection". $E5 on checksum failure. $00 to bypass.  "Correct"/non-hack value unknown.
 </td></tr>
 <tr>
+<td>0x000C</td>
+<td>Direction Ninten is facing: 00: U. 01: U-R. 2: R. 3: R-D. 04: D. 5: D-L. 6: L. 7: L-U.
+</td></tr>
+<tr>
 <td>0x0015</td>
 <td>Current area the player is in
 </td></tr>
 <tr>
-<td>0x0025-0x0026</td>
-<td>Used for random number generation?
+<td>0x0018-0x001B</td>
+<td>The X and Y coordinates, stored strangely; see below
+</td></tr>
+<tr>
+<td>0x0026-0x0027</td>
+<td>Used for RNG
 </td></tr>
 <tr>
 <td>0x0029</td>
 <td>Items?
+</td></tr>
+<tr>
+<td>0x0030-0x0031</td>
+<td>Pointer to <a href="/wiki/EarthBound_Beginnings/Object_state_data" title="EarthBound Beginnings/Object state data">object state data</a> currently being accessed
+</td></tr>
+<tr>
+<td>0x003A-0x003B</td>
+<td>New X Position of current object after movement is applied
+</td></tr>
+<tr>
+<td>0x003C-0x003D</td>
+<td>New Y Position of current object after movement is applied
+</td></tr>
+<tr>
+<td>0x003E</td>
+<td>Movement direction of current object (see 0x00A0)
 </td></tr>
 <tr>
 <td>0x0047</td>
@@ -92,7 +116,7 @@
 </td></tr>
 <tr>
 <td>0x0048</td>
-<td>Which [<a rel="nofollow" class="external text" href="https://datacrystal.tcrf.net/wiki/EarthBound_Beginnings/Enemy_groups#Groups">enemy group</a>] is being fought.
+<td>Which <a href="/wiki/EarthBound_Beginnings/Enemy_groups#Groups" title="EarthBound Beginnings/Enemy groups">enemy group</a> is being fought.
 </td></tr>
 <tr>
 <td>0x0056</td>
@@ -104,7 +128,15 @@
 </td></tr>
 <tr>
 <td>0x00A0</td>
-<td>Which direction is Ninten moving: 88: Standing still. 00: U. 01: U-R. 2: R. 3: R-D. 04: D. 5: D-L. 6: L. 7: L-U.
+<td>Direction is Ninten moving: 88: Standing still. 00: U. 01: U-R. 2: R. 3: R-D. 04: D. 5: D-L. 6: L. 7: L-U.
+</td></tr>
+<tr>
+<td>0x00AA-0x00AB</td>
+<td>New X Position of current object after movement is applied, stored as below
+</td></tr>
+<tr>
+<td>0x00AC-0x00AD</td>
+<td>New Y Position of current object after movement is applied, stored as below
 </td></tr>
 <tr>
 <td>0x00D9</td>
@@ -145,10 +177,6 @@
 <tr>
 <td>0x06E0-0x06FF</td>
 <td>Enemy 4 <a href="/wiki/EarthBound_Beginnings/Battle_Engine#Combat_data" title="EarthBound Beginnings/Battle Engine">combat state</a>
-</td></tr>
-<tr>
-<td>0x0818-B</td>
-<td>The X and Y coordinates, stored strangely; see below
 </td></tr></tbody></table>
 <h3><span class="mw-headline" id="Coordinates">Coordinates</span></h3>
 <p>The coordinates in RAM to not correspond to coordinates in the rest of the game.  To convert it, run this Python code (in this example, bytes $818-B are `80 19 C0 2D`):
@@ -172,7 +200,10 @@ print((real_x, real_y))
 <p>There are multiple saves throughout the save RAM, three for the saved data and one for the last save.  The last save is the one that was saved last, and unless an error occurred during saving, should be identical to the save slot that was last saved.
 </p>
 <h3><span class="mw-headline" id="Save_RAM">Save RAM</span></h3>
-<ul><li>0000-13FF: <b>Unknown</b></li>
+<ul><li>0000-77F: Unknown</li>
+<li>780-79F: Ninten <a href="/wiki/EarthBound_Beginnings/Object_state_data" title="EarthBound Beginnings/Object state data">object state data</a></li>
+<li>7A0-7F0: Unknown</li>
+<li>800-D0F: Misc <a href="/wiki/EarthBound_Beginnings/Object_state_data" title="EarthBound Beginnings/Object state data">object state data</a></li>
 <li>1400-16FF: Last save</li>
 <li>1700-19FF: Save slot 1</li>
 <li>1A00-1CFF: Save slot 2</li>
