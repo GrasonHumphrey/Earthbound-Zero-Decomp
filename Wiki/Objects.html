@@ -36,7 +36,7 @@
 		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
 		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
 		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><blockquote><p><b>This is a sub-page of <i><a href="/wiki/EarthBound_Beginnings" title="EarthBound Beginnings">EarthBound Beginnings</a></i>.</b></p></blockquote>
-<p><b>Objects</b> are things on the map which respond to player actions such as talking. Objects in EB0 are organized by the area of the map sector they are in. There are three banks of object data: 20000-21FFF for areas 00-19, 22000-23FFF for areas 1A-2A, and 24000-25DE5 for areas 2B-3F.
+<p><b>Objects</b> are things on the map which respond to player actions such as talking. Objects in EB0 are organized by the area of the map sector they are in. There are three banks of object data: 20000-21FFF for areas 00-19, 22000-23FFF for areas 1A-2A, and 24000-25DE5 for areas 2B-3F.  When an object is loaded its data goes into SRAM as defined by the <a href="/wiki/EarthBound_Beginnings/Object_state_data" title="EarthBound Beginnings/Object state data">object state data</a>
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
@@ -52,11 +52,11 @@
 <li class="toclevel-3 tocsection-8"><a href="#Hole_(0x4)"><span class="tocnumber">3.1.4</span> <span class="toctext">Hole (0x4)</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-9"><a href="#Interactable_NPC"><span class="tocnumber">3.2</span> <span class="toctext">Interactable NPC</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Interactable_NPC_(0x10,_0x11,_0x13)"><span class="tocnumber">3.2</span> <span class="toctext">Interactable NPC (0x10, 0x11, 0x13)</span></a></li>
 <li class="toclevel-2 tocsection-10"><a href="#Non-interactable_stationary_NPC_(0x12)"><span class="tocnumber">3.3</span> <span class="toctext">Non-interactable stationary NPC (0x12)</span></a></li>
 <li class="toclevel-2 tocsection-11"><a href="#Present_(0x14)"><span class="tocnumber">3.4</span> <span class="toctext">Present (0x14)</span></a></li>
 <li class="toclevel-2 tocsection-12"><a href="#ATM_(0x18)"><span class="tocnumber">3.5</span> <span class="toctext">ATM (0x18)</span></a></li>
-<li class="toclevel-2 tocsection-13"><a href="#Sign_(0x19_and_0x99)"><span class="tocnumber">3.6</span> <span class="toctext">Sign (0x19 and 0x99)</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Sign_(0x19)"><span class="tocnumber">3.6</span> <span class="toctext">Sign (0x19)</span></a></li>
 <li class="toclevel-2 tocsection-14"><a href="#Unknown_(0x20)"><span class="tocnumber">3.7</span> <span class="toctext">Unknown (0x20)</span></a></li>
 <li class="toclevel-2 tocsection-15"><a href="#Unknown_(0x29)"><span class="tocnumber">3.8</span> <span class="toctext">Unknown (0x29)</span></a></li>
 <li class="toclevel-2 tocsection-16"><a href="#Pay_phone_(0x98)"><span class="tocnumber">3.9</span> <span class="toctext">Pay phone (0x98)</span></a></li>
@@ -112,7 +112,7 @@
 <h4><span id="Hole_.280x4.29"></span><span class="mw-headline" id="Hole_(0x4)">Hole (0x4)</span></h4>
 <p>A door that can be entered from all sides.  All holes have their direction set to up (although it shouldn't matter).
 </p>
-<h3><span class="mw-headline" id="Interactable_NPC">Interactable NPC</span></h3>
+<h3><span id="Interactable_NPC_.280x10.2C_0x11.2C_0x13.29"></span><span class="mw-headline" id="Interactable_NPC_(0x10,_0x11,_0x13)">Interactable NPC (0x10, 0x11, 0x13)</span></h3>
 <p>These are NPCs that can be interacted with:
 </p><p>Stationary: 0x10
 </p><p>Walking: 0x11
@@ -132,7 +132,7 @@
 <h3><span id="ATM_.280x18.29"></span><span class="mw-headline" id="ATM_(0x18)">ATM (0x18)</span></h3>
 <p>Byte info currently unknown.
 </p>
-<h3><span id="Sign_.280x19_and_0x99.29"></span><span class="mw-headline" id="Sign_(0x19_and_0x99)">Sign (0x19 and 0x99)</span></h3>
+<h3><span id="Sign_.280x19.29"></span><span class="mw-headline" id="Sign_(0x19)">Sign (0x19)</span></h3>
 <ul><li>Bytes 4-5: Sprite</li>
 <li>Byte 6-0xB: Script to set interact type to Check and set text:
 <ul><li>0B # Jump to byte 0x0B (end script) unless checking</li>
