@@ -25,7 +25,7 @@ ROM SHA-256 Checksum: 876FB3C22AD17176D1485427AE9762A6C5DFECD5EEBE428B93E2251486
 5. To show changes in a human readable format, in codebrowser go to File->Export Program.  Format: XML.  Options -> Uncheck "Memory Contents".  This exported XML will have no copyrighted content and can be used to easily compare what was changed in the .gzf. 
 
 ---
-Plugin used to decode/label strings: <a href="https://github.com/GrasonHumphrey/GhidraTextDecode">GhidraTextDecode</a>.
+Plugin used to decode/label strings: <a href="https://github.com/GrasonHumphrey/GhidraTextDecode">GhidraTextDecode</a> (v2.0).
 
 Original .nes file loaded with <a href="https://github.com/kylewlacy/GhidraNes/tree/main">GhidraNES</a>.
 
